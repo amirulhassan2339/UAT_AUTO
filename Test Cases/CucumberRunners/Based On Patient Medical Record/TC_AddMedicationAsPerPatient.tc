@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AddMedicationAsPerPatient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7c51bb4-c0b0-421c-bf0c-a6cd3b308871</testCaseGuid>
+</TestCaseEntity>

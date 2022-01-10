@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "E2EEDD8604A46A7BD74342E8E92B87D8",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_AddMedicationasPerPatient_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

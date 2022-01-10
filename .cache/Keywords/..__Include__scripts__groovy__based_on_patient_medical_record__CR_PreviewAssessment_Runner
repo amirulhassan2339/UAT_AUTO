@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "657F445A424E1BF2747921F57E0298E9",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_PreviewAssessment_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

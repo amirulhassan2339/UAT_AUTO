@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "B33CECC6E33C86C3315D0A208A142A8F",
+  "keywordClasses": [
+    {
+      "name": "patientTimer.CR_PatientGridBillable",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

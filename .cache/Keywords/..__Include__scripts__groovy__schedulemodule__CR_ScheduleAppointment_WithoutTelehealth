@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "47D95F9A71A75482A763C5B6E0D58BA4",
+  "keywordClasses": [
+    {
+      "name": "schedulemodule.CR_ScheduleAppointment_WithoutTelehealth",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

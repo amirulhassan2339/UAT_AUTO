@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "ECF7E9522D8BBFCF3AE1F5B444694D44",
+  "keywordClasses": [
+    {
+      "name": "patientgrid_leftfilters.CR_OpenPatientByName",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

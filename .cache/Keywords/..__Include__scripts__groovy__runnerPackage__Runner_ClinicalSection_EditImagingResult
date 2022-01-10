@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "FD74BB5B04E799AC71025E8011E0C2B7",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_EditImagingResult",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "751074E386BD5EA0B613E89776D4F28F",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_DemoGraphics_EmailSendWhenEmailSet",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

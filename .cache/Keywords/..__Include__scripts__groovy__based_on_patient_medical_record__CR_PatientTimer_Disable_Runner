@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "0FD3E71845EB9D0F374C4DCAAAC3ED31",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_PatientTimer_Disable_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

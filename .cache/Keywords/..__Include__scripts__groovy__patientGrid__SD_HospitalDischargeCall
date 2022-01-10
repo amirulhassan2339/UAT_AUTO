@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "9A4DF0A076E95FE2D46FDF5D4AF0075E",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.SD_HospitalDischargeCall",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

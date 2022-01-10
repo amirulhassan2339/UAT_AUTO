@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_OpenPatientFromCC_MRN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0bc559b5-8a54-45d2-b9e7-f6bca45f7617</testCaseGuid>
+</TestCaseEntity>

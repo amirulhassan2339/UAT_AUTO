@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "A4F8484ACA07F60760A424FA3DE532C5",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_DeleteFamilyHistory",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

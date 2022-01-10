@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "74535F959C0A866A2D2A5E57022786DB",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_ClinicalData_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

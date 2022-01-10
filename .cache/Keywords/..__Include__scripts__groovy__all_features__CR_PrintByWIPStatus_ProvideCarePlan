@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "C2B9C836AE82EFCED2D6F0ED83DCCCAD",
+  "keywordClasses": [
+    {
+      "name": "all_features.CR_PrintByWIPStatus_ProvideCarePlan",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

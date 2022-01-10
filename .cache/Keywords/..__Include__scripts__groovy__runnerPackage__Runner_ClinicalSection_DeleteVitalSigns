@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "5896EB75E557C2560549E2BF3CFA85C4",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_DeleteVitalSigns",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

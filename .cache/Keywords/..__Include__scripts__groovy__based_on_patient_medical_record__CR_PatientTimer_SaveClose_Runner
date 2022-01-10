@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "F0FF8F083DE537139EBA784C667C54FA",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_PatientTimer_SaveClose_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

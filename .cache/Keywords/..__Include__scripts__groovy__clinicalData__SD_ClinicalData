@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D9B3EC679D4689B4D14031F384A48810",
+  "keywordClasses": [
+    {
+      "name": "clinicalData.SD_ClinicalData",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

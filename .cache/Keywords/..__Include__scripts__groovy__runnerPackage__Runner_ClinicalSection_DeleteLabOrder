@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "03405E43E7C3F035475AAA217196716E",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_DeleteLabOrder",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

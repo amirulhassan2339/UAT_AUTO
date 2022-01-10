@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PatientTimer_Disable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6fa6688-1c5b-4e1e-a2e4-2015ded7cd1d</testCaseGuid>
+</TestCaseEntity>

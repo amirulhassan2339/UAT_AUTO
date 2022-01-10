@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "C32365E5CC0E33FB18E636155FFBEB1A",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_PreviewAssessment_DraftApprove_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

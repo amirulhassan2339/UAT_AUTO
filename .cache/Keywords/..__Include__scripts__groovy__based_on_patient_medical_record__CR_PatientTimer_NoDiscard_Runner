@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "11031A3B2BA733E9044C137BD8BD8162",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_PatientTimer_NoDiscard_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

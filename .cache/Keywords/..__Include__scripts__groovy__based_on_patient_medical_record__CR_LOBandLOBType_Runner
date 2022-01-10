@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "819146B8270CC5D28BED216F5837125A",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_LOBandLOBType_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

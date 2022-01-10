@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "E3E836E9FCB536388118F363CDFB596A",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_ExportFileValidation_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

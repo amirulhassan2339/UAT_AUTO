@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "AF87D2B75609C8458E8C27630759E449",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_AddImagingResult",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

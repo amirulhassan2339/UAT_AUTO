@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "0C69B93591830DD2CA756D621A48E509",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.CR_AddAllergies_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

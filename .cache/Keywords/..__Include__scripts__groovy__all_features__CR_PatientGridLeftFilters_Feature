@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "DA0BA66C2FFA316F82D4D115FC1BDF2D",
+  "keywordClasses": [
+    {
+      "name": "all_features.CR_PatientGridLeftFilters_Feature",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

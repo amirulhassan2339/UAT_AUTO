@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "A85C99092C1B5E0377EACF16614BDDC4",
+  "keywordClasses": [
+    {
+      "name": "global_search_patient.CR_OpenPatientFromCC_MRN",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

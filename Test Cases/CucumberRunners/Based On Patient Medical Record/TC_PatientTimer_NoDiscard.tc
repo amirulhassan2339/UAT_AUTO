@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PatientTimer_NoDiscard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc0f4f03-8f42-4d1a-ab9e-5a359242ea24</testCaseGuid>
+</TestCaseEntity>

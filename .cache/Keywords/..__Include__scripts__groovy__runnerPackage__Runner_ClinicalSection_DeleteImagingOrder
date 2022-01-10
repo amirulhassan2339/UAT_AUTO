@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "F7070E16EE4A2D69EBC2C8F7002E9018",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_DeleteImagingOrder",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "BC48FD6F3A7F0B812EC8166BCBB511E0",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_Contacts_DeleteSupportPerson",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

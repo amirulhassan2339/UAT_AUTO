@@ -1,0 +1,24 @@
+Feature: Care Plan - ADD Medication
+
+	Background: 
+		Given I navigate to patient grid
+
+	@Smoke_USMM
+	Scenario Outline: Verify That User Is Able To Add Medication As Per Patient
+		When I search <Patient> using global search
+		 And I click on care plan tab
+		   * I click on add new care plan button
+		   * I click on basedonpatientmedicalrecord
+		   * I hover over on medication as per patient
+		   * I click on medication as per patient plus button
+		   * I enter <MedicationCode> as medication as per patient Code
+		   * I enter <StartDate> as medication as per patient
+		   * I click on updated button
+		   * I enter title <Title>
+		   * I click on save and close button
+		   * I click on title from care plan grid
+		Then I should see <MedicationCode> and <StartDate> as updated medication as perpatient
+
+		Examples: 
+			| Patient          | MedicationCode | SucessMessage                           | StartDate | Title                     |
+			| BABCOX, MICHAEL |             99 | successCare Plan Saved SuccessfullyHide |  12012020 | Medication as per patient |

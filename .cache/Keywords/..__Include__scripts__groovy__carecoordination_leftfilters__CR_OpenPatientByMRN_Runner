@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "357E26A4D08CA1641DF10D7142F82835",
+  "keywordClasses": [
+    {
+      "name": "carecoordination_leftfilters.CR_OpenPatientByMRN_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

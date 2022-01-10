@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "BA329B8AABD4C821B60FF57FDE7393A8",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_CareGapStatusEditOpenClosed",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

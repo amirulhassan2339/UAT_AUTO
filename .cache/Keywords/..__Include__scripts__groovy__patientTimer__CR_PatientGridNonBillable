@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "11A8776E2B09EE1C1B7E6EBA8BAAAB8F",
+  "keywordClasses": [
+    {
+      "name": "patientTimer.CR_PatientGridNonBillable",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

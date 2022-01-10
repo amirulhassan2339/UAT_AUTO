@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D32A87BD389188C0AE8208480DE0DFB6",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_ClinicalSection_EditImagingOrder",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

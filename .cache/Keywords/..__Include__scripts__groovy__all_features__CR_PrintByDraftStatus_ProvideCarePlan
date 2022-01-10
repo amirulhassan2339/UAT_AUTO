@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "613962AF3C4F6CA8C23C9BD9C12DDC33",
+  "keywordClasses": [
+    {
+      "name": "all_features.CR_PrintByDraftStatus_ProvideCarePlan",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
