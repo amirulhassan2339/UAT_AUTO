@@ -15,18 +15,18 @@
       <guid>9f3948b9-014b-49e4-8eb8-2aa9cc6492d3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Patient Grid Left Filters/TC_PatientGrid_Program</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/Patient Grid Left Filters/TC_PatientGrid_Program</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b9d906e0-8b7e-40ee-82be-6b3e84ef3bba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Patient Grid Left Filters/TC_PatientGrid_Facility</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/Patient Grid Left Filters/TC_PatientGrid_Facility</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ae1bf433-500e-44f2-93e3-a36b3484b094</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Patient Grid Left Filters/TC_PatientGrid_Enrollment</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/Patient Grid Left Filters/TC_PatientGrid_Enrollment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

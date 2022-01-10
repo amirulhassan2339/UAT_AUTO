@@ -15,24 +15,24 @@
       <guid>10210b30-a6a0-49c6-b0c6-0b570824a9bf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/PatientTimer/TC_PatientGrid_Billable</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/PatientTimer/TC_PatientGrid_Billable</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>70fad889-23ec-411c-b5d8-657101e088a8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/PatientTimer/TC_PatientGrid_NonBillable</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/PatientTimer/TC_PatientGrid_NonBillable</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3a3056c8-c91b-4e20-9213-15e93e858b09</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/PatientTimer/TC_PatientWorkFlowBox_Billable</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/PatientTimer/TC_PatientWorkFlowBox_Billable</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d316bd29-5d0d-41ca-89c4-26ce84fc1f47</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/PatientTimer/TC_PatientWorkFlowBox_NonBillable</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunners/PatientTimer/TC_PatientWorkFlowBox_NonBillable</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
