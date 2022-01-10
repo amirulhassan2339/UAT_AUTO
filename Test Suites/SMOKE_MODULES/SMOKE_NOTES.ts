@@ -68,7 +68,7 @@
    <testCaseLink>
       <guid>fad67a12-32ab-49c8-a495-331745501649</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Forms/TC_VerifyExistingForms</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

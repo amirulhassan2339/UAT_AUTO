@@ -5,7 +5,6 @@ Feature: Care Plan - Notes
 
   Scenario Outline: Verify Notes
     When I search <Patient> using global search
-    Then I am on PWB with <Patient>
     And I click on notes tab
     * I click on plus notes button
     * I should see notes popup
