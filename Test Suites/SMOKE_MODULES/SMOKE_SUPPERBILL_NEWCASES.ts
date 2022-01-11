@@ -15,12 +15,12 @@
       <guid>bf04bf76-2281-4ff4-badf-cdd77c93ada4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AllCucumberRunners/Supper Bill/TC_SuperBillNewCases</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunner/Supper Bill/TC_SuperBillNewCases</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0be1854c-9483-4779-b4a4-6ce31f93465c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AllCucumberRunners/Supper Bill/TC_DeleteScheduleAppointment</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunner/Supper Bill/TC_DeleteScheduleAppointment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

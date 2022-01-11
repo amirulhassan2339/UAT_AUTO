@@ -15,6 +15,6 @@
       <guid>71b0db94-6399-48fa-8f16-6d2b74166e8a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AllCucumberRunners/Existing Care Plans/TC_Approved</testCaseId>
+      <testCaseId>Test Cases/AllCucumberRunner/Existing Care Plans/TC_Approved</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
