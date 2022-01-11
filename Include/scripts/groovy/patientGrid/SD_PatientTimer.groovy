@@ -463,8 +463,14 @@ class SD_PatientTimer {
 	public void VerifyNonBillableCheckbox() {
 
 
-			WebUI.click(findTestObject('Object Repository/OR_PatientGrid/PatientTimer/Obj_PatientTimer_NonBillableCheckbox'))
 
+
+		if(WebUI.verifyElementNotChecked(findTestObject('Object Repository/OR_PatientGrid/PatientTimer/Obj_PatientTimer_NonBillableCheckbox'), 5, FailureHandling.OPTIONAL)) {
+
+			println('Checked')
+		}else {
+			println('Not Checked')
+		}
 	}
 
 	@And("I select (.*) as diagnosis code")

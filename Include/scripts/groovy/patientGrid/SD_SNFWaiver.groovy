@@ -61,6 +61,7 @@ public class SD_SNFWaiver {
 	public void i_select_referralsource() {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Obj_ReferralSourceClick'))
+		//WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Obj_SelectReferralSource'))
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Page_Welcome to Persivia/li_Family'))
 	}
 
@@ -96,6 +97,7 @@ public class SD_SNFWaiver {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Page_Welcome to Persivia/Page_Welcome to Persivia/Obj_ACOSelect'))
 
+		//WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Obj_SelectPatientAttributeACO'))
 	}
 
 	@And("I click patient attribute to ACO")
@@ -111,17 +113,19 @@ public class SD_SNFWaiver {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Page_Welcome to Persivia/Page_Welcome to Persivia/Obj_IAHSelect'))
 
+
+		//WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Obj_SelectPatientAttributed_IAH'))
 	}
 
 	@When("I should see SNF Waiver data")
 	public void ShouldSeeSNFWaiver() {
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/SNFWaiver/Obj_SNFDate'), 3)
-
+		
 		Thread.sleep(4000)
 	}
-
-
+	
+	
 	@And("I enter (.*) as last seen by VPA provider")
 	public void i_enter_SNF_Mehmood_Anjum_as_last_seen_by_VPA_provider(String LastSeenByVPAProvider) {
 
@@ -188,5 +192,5 @@ public class SD_SNFWaiver {
 		String date1 = DateTime.substring(0, 8)
 
 		WebUI.verifyMatch(date, date1, false)	}
-
+	
 }

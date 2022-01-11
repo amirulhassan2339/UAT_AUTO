@@ -18,13 +18,10 @@ public class SD_PatientGrid_ScheduleTab {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'), 10)
 		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'))
 
-		if(GlobalVariable.Enterprise=='MHPN') {
 
-			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectMHPN'))
-		}
-		if(GlobalVariable.Enterprise=='Support Test Ent') {
+		if(GlobalVariable.Enterprise=='US Medical Management ACO') {
 
-			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectUSMedical'))
 		}
 
 
@@ -42,7 +39,7 @@ public class SD_PatientGrid_ScheduleTab {
 
 		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 
-		Thread.sleep(8000)
+		Thread.sleep(4000)
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Logo'), 3)
 	}

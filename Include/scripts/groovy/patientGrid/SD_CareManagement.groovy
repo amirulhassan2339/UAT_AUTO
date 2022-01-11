@@ -16,7 +16,6 @@ class SD_CareManagement {
 	TestObject enterdtetime=findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/CareManagementForm/dateTime')
 	TestObject privacyobj=findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/CareManagementForm/selectprivacy')
 	TestObject priotityobj=findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/CareManagementForm/selectpriority')
-
 	TestObject provname=findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/CareManagementForm/obj_providername')
 	TestObject outreachobj=findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/CareManagementForm/obj_outreach')
 	TestObject duration=findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/CareManagementForm/obj_duration')
@@ -67,8 +66,6 @@ class SD_CareManagement {
 		String xpath='(//li[text()="'+priority+'"])[4]'
 		obj.selectdropdown(frame,xpath)
 	}
-
-
 
 	@Then("I enter provider name:(.*)")
 	public void i_enter_provider_name_name(String name) {

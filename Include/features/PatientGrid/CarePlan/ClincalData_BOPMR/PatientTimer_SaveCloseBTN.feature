@@ -20,7 +20,7 @@ Feature: Patient Timer
 
 		Examples: 
 			| Patient          |
-			| Dermo505, Mac505 |
+			| BABCOX, MICHAEL |
 			
 			@Regression_Timer_No_Discard
 	Scenario Outline: Warning Pop up on clicking "x" while timer is on - No Discard
@@ -38,4 +38,4 @@ Feature: Patient Timer
 
 		Examples: 
 			| Patient          |
-			| Dermo505, Mac505 |
+			| BABCOX, MICHAEL |

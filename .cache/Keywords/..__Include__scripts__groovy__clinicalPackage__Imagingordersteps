@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "69048B9821B22EDE3813BB4FF091EC72",
+  "keywordFileContentHash": "4A0889115EA47D1C80D92054A4CF213C",
   "keywordClasses": [
     {
       "name": "clinicalPackage.Imagingordersteps",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

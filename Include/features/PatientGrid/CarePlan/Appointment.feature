@@ -17,7 +17,6 @@ Feature: Care Plan - BOPMR
 		   * I click on save button to save appointment
 		   * I should see appoitment success message <SucessMessage> of appointment
 
-
 		Examples: 
 			| Patient          | Reason    | Time        | Comment          | SucessMessage                        |
 			| Dermo505, Mac505 | Back pain | 08:30:00 AM | Appointment Test | successRecord saved successfully.Hide |

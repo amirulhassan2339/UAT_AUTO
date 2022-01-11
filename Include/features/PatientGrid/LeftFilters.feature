@@ -13,7 +13,7 @@ Feature: Left Filters
 
 		Examples: 
 			| Facility                                       |
-			| Sanctuary at McAuley |
+			| VPA Specialty Programs |
   @Program
   Scenario Outline: Applying Program Filters
     And I click on reset button
@@ -23,7 +23,7 @@ Feature: Left Filters
 
     Examples: 
       | Program |
-      | CCM     |
+      | VPA-Behavioral-Health-Social-Work     |
 
   @Enrollment
   Scenario Outline: Applying Enrollment Filters
@@ -34,4 +34,4 @@ Feature: Left Filters
 
     Examples: 
       | Enrollment |
-      | Eligible     |
+      | Pending Patient Consent (VPA-Behavioral-Health-Social-Work)     |

@@ -1,5 +1,0 @@
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-
-import based_on_patient_medical_record.CR_PreviewAssessment_DraftApprove_Runner
-
-CucumberKW.runWithCucumberRunner(CR_PreviewAssessment_DraftApprove_Runner.class)

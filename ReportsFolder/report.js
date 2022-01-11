@@ -1,77 +1,52 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Include/features/PatientGrid/SoapNote/SoapNotes_AddLabResutls.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Include/features/PatientGrid/CarePlan/SaveNotes.feature");
 formatter.feature({
-  "name": "Soap Note Creation from Schedule flow",
+  "name": "Care Plan - Notes",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Verify Creating Lab Results - Based On Patient\u0027s Medical Record",
+  "name": "Verify Notes",
   "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Smoke_USMM_CreateLabResults"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I should see already scheduled appointment",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "I click on three dots",
+  "name": "I search \u003cPatient\u003e using global search",
   "keyword": "When "
 });
 formatter.step({
-  "name": "I click on edit soapnotes",
-  "keyword": "* "
-});
-formatter.step({
-  "name": "I click on add Lab Results plus button",
-  "keyword": "* "
-});
-formatter.step({
-  "name": "I enter \u003cLabResults\u003e as lab results in search and select analyte",
+  "name": "I click on notes tab",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I click on lab resutls OK button",
+  "name": "I click on plus notes button",
   "keyword": "* "
 });
 formatter.step({
-  "name": "I should see Lab Resultss data in soap note popup",
-  "keyword": "Then "
+  "name": "I should see notes popup",
+  "keyword": "* "
 });
 formatter.step({
-  "name": "I click on Save button to save SOAP NOTE",
+  "name": "I select privacy",
   "keyword": "When "
 });
 formatter.step({
-  "name": "I should see soap note saved message",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "I click on SaveAll button to save Lab Results",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "I click on SaveClose button to save SOAP NOTE",
+  "name": "I select priority",
   "keyword": "* "
 });
 formatter.step({
-  "name": "I should see soap note saved message",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on three dots",
+  "name": "I select type",
   "keyword": "* "
 });
 formatter.step({
-  "name": "I should see Edit Soap Note option",
+  "name": "I \u003cEnter_Notes\u003e notes",
   "keyword": "* "
 });
 formatter.step({
-  "name": "I should see Lab Resultss data in soap note popup",
+  "name": "I click on save btn",
+  "keyword": "* "
+});
+formatter.step({
+  "name": "I should see newly added note",
   "keyword": "* "
 });
 formatter.examples({
@@ -81,14 +56,14 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "LabResults",
-        "Patient"
+        "Patient",
+        "Enter_Notes"
       ]
     },
     {
       "cells": [
-        "A1C",
-        "Dermo505, Mac505"
+        "BABCOX, MICHAEL",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
       ]
     }
   ]
@@ -102,9 +77,34 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to CMR_Schedule",
+  "name": "I navigate to patient grid",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "SD_PatientGrid_ScheduleTab.I_navigate_to_patient_grid_Schedule()"
+  "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify Notes",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "I search BABCOX, MICHAEL using global search",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SD_SearchPatient.search_Patient(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on notes tab",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SD_SaveNotes.i_click_on_notes_tab()"
 });

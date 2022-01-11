@@ -26,19 +26,19 @@
    <testCaseLink>
       <guid>d74b645e-3d94-439a-b6d9-2b71a9733289</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Schedule Module/TC_VerifyProviderFilter</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c17c3b43-cf8c-4fd4-8e3d-736e0faa4947</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Schedule Module/TC_PrepopulatedDataOnEdit</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f3623f4a-adc4-448d-a558-4d8c9d4a1f73</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Schedule Module/TC_VerifyDataFromExcel</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D83D103BF50E1BAF54603032A5B2B605",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.SD_PatientGrid_CareCoordination",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

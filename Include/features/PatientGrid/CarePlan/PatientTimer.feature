@@ -11,11 +11,15 @@ Feature: Patient Timer
 		Then I should see patient <Patient> as patient_name in timer popup
 		   * I should see current date
 		   * I click on start timer button
+#		   * I select patient timer program
 		   * I click on notes tab
 		   * I click on plus notes button
 		   * I should see notes popup
+#		   * I select priority
+		   * I select type
 		   * I <Enter_Notes> notes
 		   * I click on save btn
+		   * I should see newly added note
 		When I click on minimize button
 		   * I click on patient timer button again
 		Then I should see patient <Patient> as patient_name in timer popup
@@ -33,7 +37,10 @@ Feature: Patient Timer
 		   * I click on telephonic outreach
 		   * I should see <Patient> as patient name in form popup
 		   * I should see TelephonicOutreach care form title
-		   * I enter telephonic outreach <DateTime> as datetime		   
+		   * I enter telephonic outreach <DateTime> as datetime
+		   * I enter telephonic outreach <Provider> as provider
+		   * I select outreach office location
+		   * I select outreach spoke with
 		   * I enter telephonic outreach <Follow_Up_Plan> as follow up planss
 		When I click on minimize button
 		   * I click on patient timer button again
@@ -65,6 +72,12 @@ Feature: Patient Timer
 		   * I should not see patient timer popup
 		   * I click on Problem List	tab
 		   * I should not see patient timer popup
+		When I click on problem Add button
+		 And I enter <Code_Name> in problem name field
+		   * I enter <Start_Date> in problem start date field
+		   * I enter <Severity> in problem severity field
+		   * I enter <Type> in problem type field
+		   
 		   * I click on patient timer button again
 		Then I should see patient <Patient> as patient_name in timer popup
 		When I click on minimize button
@@ -75,6 +88,13 @@ Feature: Patient Timer
 		When I click on medication Add button
 		 And I enter <Source_Type> in medication source type field
 		   * I enter <Name> in medication name field
+		   * I enter <Frequency> in medication frequency field
+		   * I enter <Route> in medication route field
+		   * I enter <Start_Date> in medication start date field
+		   * I enter <CPOE> in medication cpoe field
+		   * I enter <eSent> in medication esent field
+		   * I enter <Drug_Formulacy> in medication drug formulacy status field
+		   * I enter <Directions> in medication directions field
 		   * I click on medication Save All button
 		   * I click on patient timer button again
 		Then I should see patient <Patient> as patient_name in timer popup
@@ -84,11 +104,13 @@ Feature: Patient Timer
 		 And I click on add encounter button of a patient
 		   * I enter <Source> in patient encounter source field
 		   * I enter <Billable> in patient encounter billable chckbox
+		   * I enter <Encounter> in patient encounter encounter field
 		   * I enter <StartDate> in patient encounter start date field
 		   * I click on patient save button to save encounter
 		   * I click on patient timer button again
 		   * I click on stop timer button
-		   * I verify Non_billable checkbox is checked
+#		   * I select patient timer program
+		   * I verify billable checkbox
 		   * I enter <Comment> as comment in timer popup
 		   * I click on update button
 		Then I should see success message <TimerSucessMessage> of timer
@@ -107,14 +129,19 @@ Feature: Patient Timer
 		Then I should see patient <Patient> as patient_name in timer popup
 		   * I should see current date
 		   * I click on start timer button
+#		   * I select patient timer program_WFB
 		   
 		   
 		   * I click on notes tab
 		   * I should see patient <Patient> as patient_name in timer popup
 		   * I click on plus notes button
 		   * I should see notes popup
+#		   * I select priority
+		   * I select type
 		   * I <Enter_Notes> notes
-		   * I click on save btn		   
+		   * I click on save btn
+		   * I should see newly added note
+		   
 		   
 		   When I click on minimize button
 		   * I click on patient timer button again_WFB
@@ -141,6 +168,9 @@ Feature: Patient Timer
     * I should see <Patient> as patient name in form popup
     * I should see TelephonicOutreach care form title
     * I enter telephonic outreach <DateTime> as datetime
+    * I enter telephonic outreach <Provider> as provider
+    * I select outreach office location
+    * I select outreach spoke with
     * I enter telephonic outreach <Follow_Up_Plan> as follow up planss
     
     
@@ -171,7 +201,9 @@ Feature: Patient Timer
 		When I click on problem Add button
 		 And I enter <Code_Name> in problem name field
 		   * I enter <Start_Date> in problem start date field
-		   
+		   * I enter <Severity> in problem severity field
+		   * I enter <Type> in problem type field
+		  
 		   
 		   * I click on patient timer button again_WFB
 		Then I should see patient <Patient> as patient_name in timer popup
@@ -183,6 +215,13 @@ Feature: Patient Timer
 		When I click on medication Add button
 		 And I enter <Source_Type> in medication source type field
 		   * I enter <Name> in medication name field
+		   * I enter <Frequency> in medication frequency field
+		   * I enter <Route> in medication route field
+		   * I enter <Start_Date> in medication start date field
+		   * I enter <CPOE> in medication cpoe field
+		   * I enter <eSent> in medication esent field
+		   * I enter <Drug_Formulacy> in medication drug formulacy status field
+		   * I enter <Directions> in medication directions field
 		   * I click on medication Save All button
 		   
 		   
@@ -194,13 +233,19 @@ Feature: Patient Timer
 		When I click on encounter tab button to land on enconter section
 		 And I click on add encounter button of a patient
 		   * I enter <Source> in patient encounter source field
+		   * I enter <Billable> in patient encounter billable chckbox
+		   * I enter <Encounter> in patient encounter encounter field
 		   * I enter <StartDate> in patient encounter start date field
 		   * I click on patient save button to save encounter
 		   
 		   
+		     
+    
+
 		   * I click on patient timer button again_WFB
 		   * I click on stop timer button
-		   * I verify Non_billable checkbox is checked
+#		   * I select patient timer program_WFB
+		   * I verify billable checkbox
 		   * I enter <Comment> as comment in timer popup
 		   * I click on update button
 		Then I should see success message <TimerSucessMessage> of timer
@@ -221,12 +266,16 @@ Feature: Patient Timer
 		   * I checked non billable checkbox
 		   * I should see current date
 		   * I click on start timer button
+#		   * I select patient timer program
 		   
 		   * I click on notes tab
 		   * I click on plus notes button
 		   * I should see notes popup
+#		   * I select priority
+		   * I select type
 		   * I <Enter_Notes> notes
 		   * I click on save btn
+		   * I should see newly added note
 		When I click on minimize button
 		   * I click on patient timer button again
 		Then I should see patient <Patient> as patient_name in timer popup
@@ -246,6 +295,9 @@ Feature: Patient Timer
 		   * I should see <Patient> as patient name in form popup
 		   * I should see TelephonicOutreach care form title
 		   * I enter telephonic outreach <DateTime> as datetime
+		   * I enter telephonic outreach <Provider> as provider
+		   * I select outreach office location
+		   * I select outreach spoke with
 		   * I enter telephonic outreach <Follow_Up_Plan> as follow up planss
 		When I click on minimize button
 		   * I click on patient timer button again
@@ -280,6 +332,9 @@ Feature: Patient Timer
 		When I click on problem Add button
 		 And I enter <Code_Name> in problem name field
 		   * I enter <Start_Date> in problem start date field
+		   * I enter <Severity> in problem severity field
+		   * I enter <Type> in problem type field
+
 		   * I click on patient timer button again
 		Then I should see patient <Patient> as patient_name in timer popup
 		When I click on minimize button
@@ -289,8 +344,14 @@ Feature: Patient Timer
 		   * I should not see patient timer popup
 		When I click on medication Add button
 		 And I enter <Source_Type> in medication source type field
+		   * I enter <Name> in medication name field
+		   * I enter <Frequency> in medication frequency field
+		   * I enter <Route> in medication route field
 		   * I enter <Start_Date> in medication start date field
 		   * I enter <CPOE> in medication cpoe field
+		   * I enter <eSent> in medication esent field
+		   * I enter <Drug_Formulacy> in medication drug formulacy status field
+		   * I enter <Directions> in medication directions field
 		   * I click on medication Save All button
 		   * I click on patient timer button again
 		Then I should see patient <Patient> as patient_name in timer popup
@@ -298,11 +359,15 @@ Feature: Patient Timer
 		When I click on encounter tab button to land on enconter section
 		   * I should not see patient timer popup
 		 And I click on add encounter button of a patient
+		   * I enter <Source> in patient encounter source field
+		   * I enter <Billable> in patient encounter billable chckbox
+		   * I enter <Encounter> in patient encounter encounter field
 		   * I enter <StartDate> in patient encounter start date field
 		   * I click on patient save button to save encounter
 		   * I click on patient timer button again
 		   * I click on stop timer button
-		   * I verify Non_billable checkbox is checked
+#		   * I select patient timer program
+		   * I verify billable checkbox
 		   * I enter <Comment> as comment in timer popup
 		   * I click on update button
 		Then I should see success message <TimerSucessMessage> of timer
@@ -322,13 +387,17 @@ Feature: Patient Timer
 		   * I checked non billable checkbox
 		   * I should see current date
 		   * I click on start timer button
+#		   * I select patient timer program_WFB
 		   
 * I click on notes tab
 		   * I should see patient <Patient> as patient_name in timer popup
 		   * I click on plus notes button
 		   * I should see notes popup
+#		   * I select priority
+		   * I select type
 		   * I <Enter_Notes> notes
 		   * I click on save btn
+		   * I should see newly added note
 		   
 		   
 		   When I click on minimize button
@@ -356,6 +425,9 @@ Feature: Patient Timer
     * I should see <Patient> as patient name in form popup
     * I should see TelephonicOutreach care form title
     * I enter telephonic outreach <DateTime> as datetime
+    * I enter telephonic outreach <Provider> as provider
+    * I select outreach office location
+    * I select outreach spoke with
     * I enter telephonic outreach <Follow_Up_Plan> as follow up planss
     
     
@@ -386,7 +458,9 @@ Feature: Patient Timer
 		When I click on problem Add button
 		 And I enter <Code_Name> in problem name field
 		   * I enter <Start_Date> in problem start date field
-		  
+		   * I enter <Severity> in problem severity field
+		   * I enter <Type> in problem type field
+		   
 		   
 		   * I click on patient timer button again_WFB
 		Then I should see patient <Patient> as patient_name in timer popup
@@ -397,8 +471,13 @@ Feature: Patient Timer
 		   * I click on Medication	tab
 		When I click on medication Add button
 		 And I enter <Source_Type> in medication source type field
+		   * I enter <Name> in medication name field
+		   * I enter <Frequency> in medication frequency field
+		   * I enter <Route> in medication route field
 		   * I enter <Start_Date> in medication start date field
 		   * I enter <CPOE> in medication cpoe field
+		   * I enter <eSent> in medication esent field
+		   * I enter <Drug_Formulacy> in medication drug formulacy status field
 		   * I enter <Directions> in medication directions field
 		   * I click on medication Save All button
 		   
@@ -410,6 +489,9 @@ Feature: Patient Timer
 		   
 		When I click on encounter tab button to land on enconter section
 		 And I click on add encounter button of a patient
+		   * I enter <Source> in patient encounter source field
+		   * I enter <Billable> in patient encounter billable chckbox
+		   * I enter <Encounter> in patient encounter encounter field
 		   * I enter <StartDate> in patient encounter start date field
 		   * I click on patient save button to save encounter
 		   
@@ -419,7 +501,8 @@ Feature: Patient Timer
 
 		   * I click on patient timer button again_WFB
 		   * I click on stop timer button
-		   * I verify Non_billable checkbox is checked
+#		   * I select patient timer program_WFB
+		   * I verify billable checkbox
 		   * I enter <Comment> as comment in timer popup
 		   * I click on update button
 		Then I should see success message <TimerSucessMessage> of timer

@@ -2,6 +2,10 @@ package patientGrid
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.util.concurrent.ConcurrentHashMap.KeySetView
+
+import javax.servlet.http.WebConnection
+
 import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -362,27 +366,6 @@ public class SD_PalliativeCare {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/PalliativeCareForm/Obj_SaveBtn'))
 	}
-	
-	@And("I should see current date of notes form")
-	public void CurrentDate() {
-
-
-	String actual = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/TransitionOfCareForm/ER Follow Up Calls/Obj_CurrentDateForms'))
-		
-	String date = actual.substring(0, 2)
-
-		String date1 = actual.substring(0, 2)
-
-		if(actual.println(actual)) {
-			
-			WebUI.verifyMatch(date, date1, false)
-		}else {
-			
-			print("SOrry")
-		}
-	
-	}
-	
 	
 	@And("I should see (.*) as palliativeCare")
 	public void I_click_DateOfPalliative(String DateTime) {

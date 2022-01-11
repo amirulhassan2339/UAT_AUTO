@@ -7,6 +7,7 @@ Feature: Care Plan - WIP Status Using Save Button
   @Smoke_USMM
   Scenario Outline: Verify WIP status function using save button
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     And I click on care plan tab
     And I click on add new care plan button
     And I click on basedonpatientmedicalrecord
@@ -20,8 +21,8 @@ Feature: Care Plan - WIP Status Using Save Button
     And I close care plan popup
     When I click on title from care plan grid
     Then I should see patient <Patient> as patient_name
-    #And I should see patient data of WIP status
+    And I should see patient data of WIP status
 
     Examples: 
       | Patient          | Title      | New Status | WIP Status | SucessMessage                           |
-      | Dermo505, Mac505 | WIPPatient | New        | WIP        | successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL | WIPPatient | New        | WIP        | successCare Plan Saved SuccessfullyHide |

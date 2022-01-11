@@ -6,6 +6,7 @@ Feature: Care Plan - Export While Draft Status
   @Smoke_USMM
   Scenario Outline: Verify export function while draft status
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     And I click on care plan tab
     And I click on add new care plan button
     And I click on basedonpatientmedicalrecord
@@ -22,4 +23,4 @@ Feature: Care Plan - Export While Draft Status
 
     Examples: 
       | Patient          | Title        | New Status | Draft Status | SucessMessage                           |
-      | Dermo505, Mac505| DraftPatient | New        | Draft        | successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL| DraftPatient | New        | Draft        | successCare Plan Saved SuccessfullyHide |

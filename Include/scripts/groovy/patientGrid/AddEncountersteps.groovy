@@ -32,7 +32,7 @@ class AddEncountersteps {
 		'Click on Add button'
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/Encounter/Addencounter/Obj_EncounterTab'))
 
-		Thread.sleep(5000)
+		Thread.sleep(1000)
 	}
 
 

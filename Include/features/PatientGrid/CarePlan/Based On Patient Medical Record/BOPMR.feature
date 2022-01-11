@@ -6,6 +6,7 @@ Feature: Care Plan - BOPMR
   @Smoke_USMM
   Scenario Outline: Based On Patient Medical Report
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     And I click on care plan tab
     And I click on add new care plan button
     And I click on basedonpatientmedicalrecord
@@ -16,8 +17,6 @@ Feature: Care Plan - BOPMR
 
     Examples: 
       | Patient          | Title          | SucessMessage                           |
-      | Dermo505, Mac505 | TestingPatient | successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL | TestingPatient | successCare Plan Saved SuccessfullyHide |
       
-    #Examples: 
-      #| Patient          | Title          | Patient_Name     | MRN                | DOB             | LOB                 | Enterprise | SucessMessage                           |
-      #| Dermo505, Mac505 | TestingPatient | Dermo505, Mac505 | MRN  EntMerging505 | DOB  09/07/1905 | LOB  Non-Attributed | MHPN       | successCare Plan Saved SuccessfullyHide |
+   

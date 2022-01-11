@@ -6,6 +6,7 @@ Feature: Care Plan - Components Hide Show
   @Smoke_USMM
   Scenario Outline: Based On Patient Medical Report
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     * I click on care plan tab
     * I click on add new care plan button
     * I click on basedonpatientmedicalrecord
@@ -23,7 +24,7 @@ Feature: Care Plan - Components Hide Show
     Examples:
     
     |Patient|
-    |Dermo505, Mac505|
+    |BABCOX, MICHAEL|
     
     #Examples: 
       #| Patient          | Patient_Name     | MRN                | DOB             | LOB                 | Enterprise | SucessMessage                           |

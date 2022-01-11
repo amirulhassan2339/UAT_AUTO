@@ -5,6 +5,7 @@ Feature: Care Plan - Notes - Forms
 
 	Scenario Outline: Verify Telephonic Outreach
 		When I search <Patient> using global search
+		Then I am on PWB
 		 And I click on notes tab
 		   * I verify that the record exists in the notes section having date:<date>,Note Type:<type>,username:<username> and priority:<priority>
 
@@ -14,6 +15,7 @@ Feature: Care Plan - Notes - Forms
 
 	Scenario Outline: Verify PalliativeCare
 		When I search <Patient> using global search
+		Then I am on PWB
 		 And I click on notes tab
 		   * I verify that the record exists in the notes section having date:<date>,Note Type:<type>,username:<username> and priority:<priority>
 
@@ -23,6 +25,7 @@ Feature: Care Plan - Notes - Forms
 
 	Scenario Outline: Verify SNF Waiver
 		When I search <Patient> using global search
+		Then I am on PWB
 		 And I click on notes tab
 		   * I verify that the record exists in the notes section having date:<date>,Note Type:<type>,username:<username> and priority:<priority>
 

@@ -1,7 +1,7 @@
 Feature: Care Cordination Left Filters
 
   Background: 
-    Given I navigate to patient grid
+    Given I navigate to patient grid Care Coordination
 
   
 
@@ -16,4 +16,7 @@ Feature: Care Cordination Left Filters
 
     Examples: 
       | EncounterType |
-      | Inpatient      |
+      | Emergency     |
+      
+      
+      

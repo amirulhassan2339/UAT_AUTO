@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@id, 'ccmAllergiesDiv')])/div[1]//div</value>
+         <value>(//div[contains(@id,'ccmAllergiesDiv')])/div[1]//div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

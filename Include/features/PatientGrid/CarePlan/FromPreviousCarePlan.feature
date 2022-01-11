@@ -6,6 +6,7 @@ Feature: From Previous Care Plan - Based On patient Medical Record
 @SmokeUSMM_PreviousCP_BOPMR
   Scenario Outline: Verify Previous Care Plan - BOPMR
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     * I click on care plan tab
     * I click on add new care plan button
     * I click on basedonpatientmedicalrecord
@@ -21,11 +22,12 @@ Feature: From Previous Care Plan - Based On patient Medical Record
     
     Examples: 
       | Patient          | Title           |SucessMessage                           |
-      | Dermo505, Mac505 | PreviousPatient |successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL | PreviousPatient |successCare Plan Saved SuccessfullyHide |
 
 @SmokeUSMM_PreviousCP_Blank
   Scenario Outline: Verify Previous Care Plan - Blank
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     * I click on care plan tab
     * I click on add new care plan button
     * I click on blank
@@ -40,4 +42,4 @@ Feature: From Previous Care Plan - Based On patient Medical Record
 
     Examples: 
       | Patient          | Title           |SucessMessage                           |
-      | Dermo505, Mac505 | PreviousPatient |successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL | PreviousPatient |successCare Plan Saved SuccessfullyHide |

@@ -6,6 +6,7 @@ Feature: Care Plan - Draft Status Using SaveClose Button
   @Smoke_USMM
   Scenario Outline: Verify draft status function using save & close button
     When I search <Patient> using global search
+    Then I am on PWB with <Patient>
     And I click on care plan tab
     And I click on add new care plan button
     And I click on basedonpatientmedicalrecord
@@ -16,10 +17,10 @@ Feature: Care Plan - Draft Status Using SaveClose Button
     And I click on save and close button
     Then I should see success message <SucessMessage> of CP
     When I click on title from care plan grid
-    #Then I should see patient data of draft status
+    Then I should see patient data of draft status
     Then I should see patient <Patient> as patient_name
-    #And I should see status as <Draft Status> on CP header
+    And I should see status as <Draft Status> on CP header
 
     Examples: 
       | Patient          | Title        | New Status | Draft Status | SucessMessage                           |
-      | Dermo505, Mac505 | DraftPatient | New        | Draft        | successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL | DraftPatient | New        | Draft        | successCare Plan Saved SuccessfullyHide |

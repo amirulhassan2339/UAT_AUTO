@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "E2FF895DBEFFD023537ACCA1109C40C6",
+  "keywordClasses": [
+    {
+      "name": "global_search_patient.CR_OpenPatientFromGrid_Name",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

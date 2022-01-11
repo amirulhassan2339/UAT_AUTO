@@ -16,4 +16,4 @@ Feature: Care Plan - Export While WIP Status
 
     Examples: 
       | Patient          | Title      | New Status | WIP Status | SucessMessage                           |
-      | Dermo505, Mac505 | ExportFile | New        | WIP        | successCare Plan Saved SuccessfullyHide |
+      | BABCOX, MICHAEL | ExportFile | New        | WIP        | successCare Plan Saved SuccessfullyHide |

@@ -36,7 +36,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Log
 WebUI.waitForElementClickable(findTestObject('OR_HomePage/Obj_QAmhpn'), 2)
 
 		'Select Support Test Ent Enterprise'
-		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
+		WebUI.click(findTestObject('OR_HomePage/Obj_SelectUSMedical'))
 
 
 		//		WebUI.click(findTestObject('OR_HomePage/Obj_AprimaEnterprise'))

@@ -31,11 +31,10 @@ Feature: Scheduled Left Filters flow
 		When I enter <Patient> as appointment patient
 		 And I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-		   * I select Visit Type:<VisitType>
-#		   * I drag chat list
+		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		When I click on three dots
 		   * I click on edit appointment button
@@ -80,18 +79,19 @@ Feature: Scheduled Left Filters flow
 		When I enter <Patient> as appointment patient
 		 And I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-#		   * I drag chat list
+		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		When I click on three dots
 		   * I click on checkIn button
 		Then I should see checkIn title
+		   * I should see <Patient> as actual patient name
 		When I enter <CheckIn_Comment> as CheckInComment
 		 And I click on appointment update button
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		   * I click on schedule left filters reset button
 		   * I select Appt Status as:<ApptStatus>
@@ -101,7 +101,7 @@ Feature: Scheduled Left Filters flow
 		When I enter <CheckEdit_Comment> as CheckEditComment
 		 And I click on appointment update button
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		   * I click on three dots
 		When I click on check out button
@@ -109,7 +109,7 @@ Feature: Scheduled Left Filters flow
 		When I enter <CheckOut_Comment> as CheckOutComment
 		 And I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		When I click on three dots
 		 And I click on View Patient Record button
@@ -129,9 +129,9 @@ Feature: Scheduled Left Filters flow
 		   * I enter <Time> as block_Time
 		   * I enter <Comment> as block_comment
 		   * I click on save block button
-#		Then I should see block successful save message
-#		When I click on three dots
-#		 And I click on delete block button
+		Then I should see block successful save message
+		When I click on three dots
+		 And I click on delete block button
 
 		Examples: 
 			| BlockName | Time    | StartDate | Comment            |

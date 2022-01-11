@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "0D3AABD20D02D1094E58A8E66D4DF2E5",
+  "keywordFileContentHash": "77B6AAC2F3199BD7FE8C1699F5BBA7B1",
   "keywordClasses": [
     {
       "name": "patientGrid.SD_TransitionForm",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -43,6 +43,10 @@ UtilityFunctions obj=new UtilityFunctions();
 	@When("I select privacy for save notes:(.*)")
 	public void i_select_Private(String privacy) {
 
+//		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/Obj_Privacy'))
+//		
+//		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/Obj_Privacy'))
+//		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/Obj_Privacy'))
 
 		'I click on privacy field'
 		WebUI.click(PrivacyClick)
@@ -78,8 +82,8 @@ UtilityFunctions obj=new UtilityFunctions();
 	public void i_select_CCM() {
 
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/Obj_Type'))
-		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/Obj_TypeSelect'))
-		
+
+		//WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/li_CCM'))
 	}
 
 	@When("I (.*) notes")

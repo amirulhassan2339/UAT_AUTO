@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='mainTabList']/li/div/ul/li[6]/span</value>
+         <value>//ul[@id='mainTabList']/li/div/ul/li[5]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
