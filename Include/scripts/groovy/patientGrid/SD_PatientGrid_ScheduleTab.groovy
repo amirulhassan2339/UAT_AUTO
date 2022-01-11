@@ -24,9 +24,21 @@ public class SD_PatientGrid_ScheduleTab {
 			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectUSMedical'))
 		}
 
+		if(GlobalVariable.Enterprise=='MHPN') {
 
-		Thread.sleep(3000)
-		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectMHPN'))
+		}
+
+		if(GlobalVariable.Enterprise=='Support Test Ent') {
+
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
+		}
+
+
+
+
+//		Thread.sleep(3000)
+//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 		WebUI.getUrl()
 
 		String ActualText = WebUI.getText(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
@@ -35,7 +47,17 @@ public class SD_PatientGrid_ScheduleTab {
 
 		WebUI.mouseOver(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
 
-		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Schedule'))
+		//UAT
+
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_ScheduleUAT'))
+
+		//SLT2
+
+		//WebUI.click(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_ScheduleSLT'))
+
+
+
+
 
 		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 

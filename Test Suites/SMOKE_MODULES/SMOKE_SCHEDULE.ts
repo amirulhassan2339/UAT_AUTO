@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>0c32e581-04eb-46e5-a2e2-8ecee6d418bf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Schedule Module/TC_ScheduleAppointment</testCaseId>
    </testCaseLink>
    <testCaseLink>

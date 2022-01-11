@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "38A44FF5F25E7ACACB1D984E2CDA85EB",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.SD_ClinicalData",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

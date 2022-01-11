@@ -11,4 +11,4 @@ Feature: Search Patient
 
 		Examples:
 		|MRN|
-		|Powell|
+		|EleanorLincoln|

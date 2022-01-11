@@ -18,8 +18,9 @@ Feature: Care Plan - ADD Allergies
 		   * I enter title <Title>
 		   * I click on save and close button
 		   * I click on title from care plan grid
-		Then I should see <AllergySubstances> and <AllergyCode> and <StartDate> as updated allergies
+	  Then I should see patient <Patient> as patient_name
+#		Then I should see <AllergySubstances> and <AllergyCode> and <StartDate> as updated allergies
 
 		Examples: 
 			| Patient          | AllergyCode | SucessMessage                           | AllergySubstances    | StartDate | Title           |
-			| BABCOX, MICHAEL |   293586001 | successCare Plan Saved SuccessfullyHide | Allergy to substance |  12012020 | Known Allergies |
+			| Dermo505, Mac505 |   293586001 | successCare Plan Saved SuccessfullyHide | Allergy to substance |  12012020 | Known Allergies |

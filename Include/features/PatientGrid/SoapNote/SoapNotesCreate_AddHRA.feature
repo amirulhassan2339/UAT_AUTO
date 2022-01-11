@@ -1,17 +1,16 @@
 Feature: Soap Note Creation from Schedule flow
 
   Background: 
-    Given I navigate to patient grid
+    Given I navigate to CMR_Schedule
 
   @Smoke_USMM_CreateScheduleAppointment
   Scenario Outline: Verify Creating Schedule Appointment Using Soap Notes
-    When I click on schedule tab
-    And I double click on screen to add appointment
+    When I double click on screen to add appointment
     Then I should see schedule appointment popup
     When I enter <Patient> as appointment patient
     And I enter <Reason> as appointment reason
     * I should see <Patient> as actual patient name
-    * I drag chat list
+    #* I drag chat list
     * I click create button to save appointment
     * I click on yes button
     #* I click on proceed button to appointment
@@ -19,25 +18,23 @@ Feature: Soap Note Creation from Schedule flow
 
     Examples: 
       | Patient          | Reason    |
-      | BABCOX, MICHAEL | Back pain |
+      | Dermo505, Mac505 | Back pain |
+      
+      
 
   @Smoke_USMM_VerifyPatientData
   Scenario Outline: Verify That Patient Data Are Showing
-    When I click on schedule tab
     Then I should see already scheduled appointment
     When I click on three dots
-    #* I hover over on create soapnotes
-    #* I click on based on patient medical record
     * I click on edit soapnotes
     Then I should see <Patient> as patient
 
     Examples: 
       | Patient          |
-      | BABCOX, MICHAEL |
+      | Dermo505, Mac505 |
 
   @Smoke_USMM_HRATabsVerifications
   Scenario Outline: Verify That While Clicking HRA - Three Tabs Are Showing
-    When I click on schedule tab
     Then I should see already scheduled appointment
     When I click on three dots
     * I click on edit soapnotes
@@ -45,26 +42,19 @@ Feature: Soap Note Creation from Schedule flow
     When I click on add HRA plus button
     Then I should see HRA popup with all tabs
       | Patient          |
-      | BABCOX, MICHAEL |
+      | Dermo505, Mac505 |
 
   @Smoke_USMM_CreateSN
   Scenario Outline: Verify Creating Soap Notes - Based On Patient's Medical Record
-    When I click on schedule tab
     Then I should see already scheduled appointment
     When I click on three dots
     * I click on edit soapnotes
-    #    * I click on based on patient medical record
     * I click on add HRA plus button
     * I enter <ThePatientUnderstands> as the patient understands
-    #    * I enter <DoesThePatientHaveAnyClinicalIssuesThatNeedToBeAddressedToday> as Does the patient have any clinical issues that need to be addressed today
-    #    * I enter <ExplainDetails1> as explain detais of Does the patient have any clinical issues that need to be addressed today
-    #    * I enter <WasTranslatorUsedDuringTodayVisit> as Was a translator used during today visit
-    #    * I enter <ExplainDetails2> as explain detais of Was a translator used during today visit
     * I enter <LocationOfVisit> as location of visit
     * I enter <PCName> as pc name
     * I enter <PC_PhoneNumber> as pc phone number
     * I enter <PatientCareTeam_Notes> as patient care team
-    #    * I select date when end of life
     * I click on Review Of System Tab
     * I enter <Temp> as temprature
     * I enter <Pulse> as pulse
@@ -89,8 +79,6 @@ Feature: Soap Note Creation from Schedule flow
 
   @Smoke_USMM_DelateScheduleAppointment
   Scenario: Verify deleting Scheduled Appointment
-    When I click on schedule tab
-    Then I should see already scheduled appointment
     When I click on three dots
     And I click on delete appointment
     And I should see delete appointment message

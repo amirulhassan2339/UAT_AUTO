@@ -24,4 +24,4 @@ Feature: Patient Timer
 
 		Examples: 
 			| Patient          | SecondPatient      |
-			| BABCOX, MICHAEL | MEH, BU |
+			| Dermo505, Mac505 | Cameroon, Cameroon |

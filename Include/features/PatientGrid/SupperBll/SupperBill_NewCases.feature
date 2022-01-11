@@ -1,31 +1,30 @@
 Feature: Supper Bill flows
 
 	Background: 
-		Given I navigate to patient grid
+		Given I navigate to CMR_Schedule
 
 	@SmokeUSMM_SupperBill_NewCases
 	Scenario Outline: Verify that patients are filtered against the selected soap status signed
-		When I click on schedule tab
-		   * I double click on screen to add appointment
-		   * I enter <Patient> as appointment patient
+		When I double click on screen to add appointment
+		 And I enter <Patient> as appointment patient
 		   * I enter <Reason> as appointment reason
 		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
 		   * I click on proceed button to appointment
-		When I click on three dots
+		   * I click on three dots
 		   * I hover over on create soapnotes
 		   * I click on based on patient medical record
 		   * I click on add diagnosis plus button
-		 And I enter <Diagnosis> as diagnosis
+		   * I enter <Diagnosis> as diagnosis
 		   * I click on diagnosisSave button
 		   * I enter <Facility> to add signature for sign button
 		   * I select Rendering Provider
-		When I click on Sign button to sign soapnotes
+		   * I click on Sign button to sign soapnotes
 		   * I click on Create Signature button
 		   * I set signature
 		   * I click on submit signature button
-		When I click on close button
+		   * I click on close button
 		   * I navigate to supper bill tab
 		   * I click on Reset button to reset supper bill filters
 		   * I select <Soap_Status> as Signed status from soap status

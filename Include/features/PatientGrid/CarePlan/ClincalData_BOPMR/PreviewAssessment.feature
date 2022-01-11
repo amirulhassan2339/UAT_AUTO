@@ -30,4 +30,4 @@ Feature: Care Plan - Preview Assessment - Based On Patient Medical Record
 
 		Examples: 
 			| Patient          | Title              | Comment                                                                    |CPTCode|
-			| BABCOX, MICHAEL | Assessment TestingName | Lorem Ipsum is simply dummy text of the printing and typesetting industry. |Test Code|
+			| Dermo505, Mac505 | Assessment TestingName | Lorem Ipsum is simply dummy text of the printing and typesetting industry. |Test Code|

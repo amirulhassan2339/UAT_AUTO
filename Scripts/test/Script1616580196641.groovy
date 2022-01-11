@@ -41,7 +41,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Log
 
 WebUI.mouseOver(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
 
-		WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_Patients'))
+		WebUI.click(findTestObject('OR_LandingPage/OR_CMR/Obj_PatientsUAT'))
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Logo'), 3)
 

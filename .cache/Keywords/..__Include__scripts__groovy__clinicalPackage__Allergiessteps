@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B8A2AC71C252828DE656EFE9AB425530",
+  "keywordFileContentHash": "93CF7254C291C4BA66FA86816EA6AC43",
   "keywordClasses": [
     {
       "name": "clinicalPackage.Allergiessteps",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

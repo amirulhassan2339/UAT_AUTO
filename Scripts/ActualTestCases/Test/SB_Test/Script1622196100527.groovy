@@ -36,7 +36,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Log
 WebUI.waitForElementClickable(findTestObject('OR_HomePage/Obj_QAmhpn'), 2)
 
 		'Select Support Test Ent Enterprise'
-		WebUI.click(findTestObject('OR_HomePage/Obj_SelectUSMedical'))
+		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
 
 
 		//		WebUI.click(findTestObject('OR_HomePage/Obj_AprimaEnterprise'))
@@ -54,7 +54,7 @@ WebUI.waitForElementClickable(findTestObject('OR_HomePage/Obj_QAmhpn'), 2)
 		WebUI.mouseOver(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
 
 		WebUI.enableSmartWait()
-		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/SupperBill/Obj_SupperBillMenu'))
+		WebUI.click(findTestObject('OR_PatientGrid/SupperBill/Obj_SupperBillMenuUAT'))
 
 		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 

@@ -1,0 +1,7 @@
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
+import carecoordination_leftfilters.CR_DischargeandAdmitDate_Runner
+
+
+
+CucumberKW.runWithCucumberRunner(CR_DischargeandAdmitDate_Runner.class)

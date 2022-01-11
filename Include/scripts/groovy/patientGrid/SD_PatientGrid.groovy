@@ -22,8 +22,6 @@ public class SD_PatientGrid {
 
 
 
-
-
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'), 10)
 		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'))
 
@@ -31,10 +29,21 @@ public class SD_PatientGrid {
 
 			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectUSMedical'))
 		}
+		
+		if(GlobalVariable.Enterprise=='MHPN') {
+			
+						WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectMHPN'))
+					}
+					
+			if(GlobalVariable.Enterprise=='Support Test Ent') {
+			
+						WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
+					}
 
 
-//		Thread.sleep(3000)
-//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+		//		Thread.sleep(3000)
+		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+					
 		WebUI.getUrl()
 
 		String ActualText = WebUI.getText(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
@@ -44,10 +53,17 @@ public class SD_PatientGrid {
 		WebUI.mouseOver(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
 
 
-		WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_Patients'))
+		//UAT
 		
+		WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_PatientsUAT'))
+		
+		//SLT2
+		
+		//WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_PatientsSLT'))
+		
+
 		Thread.sleep(2000)
-		
+
 		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 
 		Thread.sleep(3000)

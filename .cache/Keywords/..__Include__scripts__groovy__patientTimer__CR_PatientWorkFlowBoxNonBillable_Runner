@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "C3D7266B97038140DA7AED1A104C8CBE",
+  "keywordClasses": [
+    {
+      "name": "patientTimer.CR_PatientWorkFlowBoxNonBillable_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

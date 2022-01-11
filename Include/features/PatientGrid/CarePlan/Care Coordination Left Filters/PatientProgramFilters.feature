@@ -1,7 +1,7 @@
 Feature: Care Cordination Left Filters
 
   Background: 
-    Given I navigate to patient grid Care Coordination
+    Given I navigate to patient grid
 
   
 

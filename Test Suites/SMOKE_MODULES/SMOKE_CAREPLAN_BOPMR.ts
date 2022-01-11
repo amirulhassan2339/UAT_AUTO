@@ -188,7 +188,7 @@
    <testCaseLink>
       <guid>a321a629-e9ce-47c8-8dee-9c9e601050a2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Based On Patient Medical Record/TC_PatientTimerCMModule</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -206,7 +206,7 @@
    <testCaseLink>
       <guid>44cf9e93-443b-447e-9ef4-be1fc779a48d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Based On Patient Medical Record/TC_UncheckAssessment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -26,31 +26,31 @@
    <testCaseLink>
       <guid>e3a6fafe-aba3-4ab2-9cf2-5d77d863740e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_AddMedication</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2f7f6423-ed78-4ccc-ba05-216e0830a817</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_AddProblem</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c5b68c46-34f3-46ae-9ff1-ef9b8d9d3a0f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_LabResults</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>701b0716-922d-4dad-84b0-068c92cbe561</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_VerifyPatientData</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cf6ccf3f-5a58-45c1-b4d5-462842fb918c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_HRATabsVerifications</testCaseId>
    </testCaseLink>
    <testCaseLink>

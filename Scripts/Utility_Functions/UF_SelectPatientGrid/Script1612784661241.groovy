@@ -16,4 +16,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 'Select Patient'
-WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_Patients'))
+WebUI.click(findTestObject('OR_LandingPage/OR_CMR/Obj_PatientsUAT'))
