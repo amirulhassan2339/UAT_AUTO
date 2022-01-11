@@ -1,0 +1,5 @@
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
+import scheduleLeftFilters_NewCases.CR_StatusFilters_CheckInOut
+
+CucumberKW.runWithCucumberRunner(CR_StatusFilters_CheckInOut.class)

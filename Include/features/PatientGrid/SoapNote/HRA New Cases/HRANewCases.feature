@@ -1,20 +1,19 @@
 Feature: Soap Note Creation from Schedule flow
 
 	Background: 
-		Given I navigate to patient grid
+		Given I navigate to CMR_Schedule
 
 	@Smoke_USMM_CreateScheduleAppointment_WithNewHRACases
 	Scenario Outline: HRA Soap Notes New Flows
-		When I click on schedule tab
-		   * I double click on screen to add appointment
+		When I double click on screen to add appointment
 		Then I should see schedule appointment popup
 		When I enter <Patient> as appointment patient
 		   * I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-		   * I drag chat list
+#		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		   * I click on three dots
 		#		   * I click on edit soapnotes
@@ -38,7 +37,7 @@ Feature: Soap Note Creation from Schedule flow
 		   * I enter <RightResults> as right result
 		   * I click on save button to save assessment
 		   * I click on cross icon to close the popup
-		   * I should see <DiagnosisCode> in Diagnosis section
+		   * I should see <ReasonTest> in Recommended Lab section
 		When I click on add HRA plus button
 		   * I click on Exam and Recomendation Tab
 		   * I select on Referral required
@@ -69,10 +68,6 @@ Feature: Soap Note Creation from Schedule flow
 		   * I click on Apply button to apply supper bill filters
 		   * I open Patient using <MRN> on superbill screen
 		Then I should see <MRN> on superbill grid
-		When I click on patient tab
-		   * I search <Patient> using global search
-		   * I click on encounter tab button to land on enconter section
-		Then I should see signed status on encounter grid
 		When I click on schedule tab
 		   * I click on three dots
 		   * I click on view soap note
@@ -87,7 +82,6 @@ Feature: Soap Note Creation from Schedule flow
 
 	@Smoke_USMM_DelateScheduleAppointment
 	Scenario: Verify deleting Scheduled Appointment
-		When I click on schedule tab
 		Then I should see already scheduled appointment
 		When I click on three dots
 		 And I click on delete appointment

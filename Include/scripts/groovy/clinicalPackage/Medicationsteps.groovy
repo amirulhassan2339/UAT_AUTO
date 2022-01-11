@@ -58,13 +58,10 @@ class Medicationsteps {
 
 	@And("I click on medication Add button")
 	def add_button_medication() {
-		
-		Thread.sleep(1000)
 		WebUI.waitForElementClickable(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Medication/Obj_button_Add'),
 				GlobalVariable.timeout)
 
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Medication/Obj_button_Add'))
-		Thread.sleep(1000)
 	}
 
 	@And("I click on medication Edit button")

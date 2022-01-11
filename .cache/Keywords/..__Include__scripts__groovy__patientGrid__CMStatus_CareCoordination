@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "68A93ED32A782EFAC7A1CF217153F348",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.CMStatus_CareCoordination",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

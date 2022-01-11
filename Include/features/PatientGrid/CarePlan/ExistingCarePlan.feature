@@ -6,41 +6,37 @@ Feature: Existing Care Plan
 @SmokeUSMM_ExistingApproved
   Scenario Outline: Verify Existing Approved Care Plan
     When I search <Patient> using global search
-    Then I am on PWB with <Patient>
     And I click on care plan tab
     * I shoule see approved care plan as <ExistingCarePlan>
 
     Examples: 
       | Patient          | ExistingCarePlan |
-      | BABCOX, MICHAEL | TestApproved     |
+      | Dermo505, Mac505 | TestApproved     |
 @SmokeUSMM_ExistingDraft
   Scenario Outline: Verify Existing Draft Care Plan
     When I search <Patient> using global search
-    Then I am on PWB with <Patient>
     And I click on care plan tab
     * I shoule see draft care plan as <ExistingCarePlan>
 
     Examples: 
       | Patient          | ExistingCarePlan |
-      | BABCOX, MICHAEL | TestDraft        |
+      | Dermo505, Mac505 | TestDraft        |
 
 @SmokeUSMM_ExistingRejected
   Scenario Outline: Verify Existing  Rejected Care Plan
     When I search <Patient> using global search
-    Then I am on PWB with <Patient>
     And I click on care plan tab
     * I shoule see rejected care plan as <ExistingCarePlan>
 
     Examples: 
       | Patient          | ExistingCarePlan |
-      | BABCOX, MICHAEL | TestRejected     |
+      | Dermo505, Mac505 | TestRejected     |
 @SmokeUSMM_ExistingWIP
   Scenario Outline: Verify Existing WIP Care Plan
     When I search <Patient> using global search
-    Then I am on PWB with <Patient>
     And I click on care plan tab
     * I shoule see wip care plan as <ExistingCarePlan>
 
     Examples: 
       | Patient          | ExistingCarePlan |
-      | BABCOX, MICHAEL | TestWIP          |
+      | Dermo505, Mac505 | TestWIP          |

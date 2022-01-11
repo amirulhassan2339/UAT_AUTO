@@ -301,7 +301,6 @@ class Allergiessteps {
 
 	@And("I click on allergies Update button")
 	def update_button_to_save_allergies_record() {
-		Thread.sleep(1000)
 		'Click on Update icon'
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_update'))
 	}

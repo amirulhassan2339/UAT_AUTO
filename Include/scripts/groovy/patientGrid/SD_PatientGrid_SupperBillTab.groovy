@@ -20,9 +20,13 @@ public class SD_PatientGrid_SupperBillTab {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'), 10)
 		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'))
 
-		if(GlobalVariable.Enterprise=='US Medical Management ACO') {
+		if(GlobalVariable.Enterprise=='MHPN') {
 
-			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectUSMedical'))
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectMHPN'))
+		}
+		if(GlobalVariable.Enterprise=='Support Test Ent') {
+
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
 		}
 
 

@@ -2,9 +2,11 @@ package patientGrid
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.aspectj.asm.internal.ProgramElement
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import cucumber.api.java.en.And
@@ -14,6 +16,11 @@ import groovypackage.Methods
 
 public class SD_CMStatus_CareCoordination {
 
+	TestObject DOB=findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_DOB_Rearange')
+	TestObject Program=findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_EncProgram_Rearange')
+	
+	
+	
 	WebDriver driver;
 
 	@And("I select (.*) as cm status")
@@ -46,8 +53,10 @@ public class SD_CMStatus_CareCoordination {
 	public void I_should_see_care_cordination_LOB_filters(String CM_Status) {
 
 
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_VerifyCMStatus'),5)
+		
 		String Actual_CMStatus = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_VerifyCMStatus'))
-
+		
 		if(!Actual_CMStatus.is(CM_Status)) {
 
 			WebUI.verifyEqual(CM_Status, Actual_CMStatus)
@@ -74,6 +83,8 @@ public class SD_CMStatus_CareCoordination {
 
 		Thread.sleep(10000)
 
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_ClickCMStatusLink'),5)
+		
 		'Click On Hyper Link'
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_ClickCMStatusLink'))
 
@@ -399,6 +410,15 @@ public class SD_CMStatus_CareCoordination {
 		Thread.sleep(10000)
 	}
 
+	@When("I swap DOB with Enc Program")
+	public void I_swapDOBwithProgram() {
+
+		
+		WebUI.dragAndDropToObject(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_DOB_Rearange'), findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_EncProgram_Rearange'))
+		Thread.sleep(10000)
+
+	}
+	
 	@Then("I select (.*) as export")
 	public void ClickExportOptions(String Export) {
 

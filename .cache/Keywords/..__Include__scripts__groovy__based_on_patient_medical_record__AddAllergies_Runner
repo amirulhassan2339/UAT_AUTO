@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "36828CF5DAAC09008DFA339BA258720C",
+  "keywordClasses": [
+    {
+      "name": "based_on_patient_medical_record.AddAllergies_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

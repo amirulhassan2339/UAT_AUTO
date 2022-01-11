@@ -18,9 +18,10 @@ Feature: Care Plan - ADD Problem
 		   * I enter title <Title>
 		   * I click on save and close button
 		   * I click on title from care plan grid
-		   Then I should see <ProblemCode> and <StartDate> as updated problem
+		   Then I should see patient <Patient> as patient_name
+#		   Then I should see <ProblemCode> and <StartDate> as updated problem
 		   
 
 		Examples: 
 			| Patient          | ProblemCode | SucessMessage                           | ActiveProblem |StartDate|Title|
-			| BABCOX, MICHAEL |    010.01 | successCare Plan Saved SuccessfullyHide | ICD-9         |12012020|Problem|
+			| Dermo505, Mac505 |    010.01 | successCare Plan Saved SuccessfullyHide | ICD-9         |12012020|Problem|

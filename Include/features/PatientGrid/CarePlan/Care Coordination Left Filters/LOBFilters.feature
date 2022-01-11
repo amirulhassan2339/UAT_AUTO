@@ -1,7 +1,7 @@
 Feature: Care Cordination Left Filters
 
   Background: 
-    Given I navigate to patient grid Care Coordination
+    Given I navigate to patient grid
 
   
   Scenario Outline: Applying LOB Filter
@@ -13,8 +13,6 @@ Feature: Care Cordination Left Filters
     And I click on care cordination apply button
     Then I should see <LOB> as care cordination LOB
     
-    
-
  Examples:
  |LOB|
- |Non-Attributed|
+ |Non-ACO (IAH)|

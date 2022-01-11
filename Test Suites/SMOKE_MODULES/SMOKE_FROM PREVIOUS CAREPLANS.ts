@@ -15,12 +15,12 @@
       <guid>7bdc0187-e51c-40e0-b732-57cd328da5f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AllCucumberRunner/From Previous Care Plan/TC_From_Blank</testCaseId>
+      <testCaseId>Test Cases/CucumberRunners/From Previous Care Plan/TC_From_Blank</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a04ba25a-ee90-494f-ba86-ae72d1180cc4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AllCucumberRunner/From Previous Care Plan/TC_From_BOPMR</testCaseId>
+      <testCaseId>Test Cases/CucumberRunners/From Previous Care Plan/TC_From_BOPMR</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -31,6 +31,7 @@ class ProblemListsteps {
 		// 'Click on Clinical tab'
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientToClinicalTab/Obj_ClinicalTab'))
 
+		
 		WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientToClinicalTab/Obj_button_Add'), GlobalVariable.timeout)
 		System.out.println("user is on clinical tab")
 		Thread.sleep(2000)

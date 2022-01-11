@@ -6,12 +6,12 @@
    <elementGuidId>1d2c68f0-f47a-4814-8eca-7939bb92b01c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li.k-item.k-state-default.k-state-hover > span.k-link</value>
+         <key>XPATH</key>
+         <value>//ul[@id='mainTabList']/li/div/ul/li[2]/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='mainTabList']/li/div/ul/li[1]/span</value>
+         <key>CSS</key>
+         <value>li.k-item.k-state-default.k-state-hover > span.k-link</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

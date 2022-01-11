@@ -1,0 +1,5 @@
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
+import based_on_patient_medical_record.CR_PatientTimer_SaveClose_Runner
+
+CucumberKW.runWithCucumberRunner(CR_PatientTimer_SaveClose_Runner.class)

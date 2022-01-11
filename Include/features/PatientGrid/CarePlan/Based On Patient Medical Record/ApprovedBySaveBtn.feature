@@ -15,18 +15,24 @@ Feature: Care Plan - Approved Using Save Button
 		 And I select work in progress as no
 		 And I click on save button
 		Then I should see success message <SucessMessage> of CP
-		* I should see patient <Patient> as patient_name
-		 * I should see status as <Draft Status> on CP header
+		Then I should see patient <Patient> as patient_name
+		 And I should see status as <Draft Status> on CP header
 		When I click on saveapprove button
+		#And I click on review button
+		#And I click on saveapprove button
 		Then I should see alert popup
 		 And I click on proceed button
 		Then I should see success message <SucessMessage> of CP
 		When I click on title from care plan grid
 		Then I should see patient <Patient> as patient_name
+		#Then I should see patient data <Patient_Name> and <MRN> and <DOB> and <LOB> and <Enterprise> on care plan
 		 And I should see patient data as read only
-		 And I should see approval status as <Approved Status> on CP header
+#		 And I should see approval status as <Approved Status> on CP header
 
 		Examples: 
 			| Patient          | Title           | New Status | Draft Status | Approved Status | SucessMessage                           |
-			| BABCOX, MICHAEL | ApprovedPatient | New        | Draft        | Approved        | successCare Plan Saved SuccessfullyHide |
-    
+			| Dermo505, Mac505 | ApprovedPatient | New        | Draft        | Approved        | successCare Plan Saved SuccessfullyHide |
+			
+    #Examples: 
+      #| Patient          | Title           | New Status | Draft Status | Approved Status | Patient_Name     | MRN                | DOB             | LOB                 | Enterprise | SucessMessage                           |
+      #| Dermo505, Mac505 | ApprovedPatient | New        | Draft        | Approved        | Dermo505, Mac505 | MRN  EntMerging505 | DOB  09/07/1905 | LOB  Non-Attributed | MHPN       | successCare Plan Saved SuccessfullyHide |

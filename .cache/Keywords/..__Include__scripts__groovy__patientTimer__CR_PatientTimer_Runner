@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "C64776CA1B7C41B570375088FA3373A1",
+  "keywordClasses": [
+    {
+      "name": "patientTimer.CR_PatientTimer_Runner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
