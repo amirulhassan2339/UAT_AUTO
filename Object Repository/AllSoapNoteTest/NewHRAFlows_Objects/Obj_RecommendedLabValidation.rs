@@ -91,6 +91,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//caption</value>
+      <value>(//div[@data-mz-key='hra'])/div[2]//tr[3]//td[2]</value>
    </webElementXpaths>
 </WebElementEntity>

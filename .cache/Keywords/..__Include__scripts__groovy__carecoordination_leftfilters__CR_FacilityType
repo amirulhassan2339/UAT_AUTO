@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "491201C648A87756052F04FED502E14A",
+  "keywordFileContentHash": "CCF50932644A85334C0DD739DE6D7705",
   "keywordClasses": [
     {
       "name": "carecoordination_leftfilters.CR_FacilityType",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

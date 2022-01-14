@@ -114,8 +114,8 @@ class ProblemListsteps {
 		'Set the text cho in problem filed to select Problem'
 		WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_inputcode'), Code_Name)
 
-		Thread.sleep(2000)
-		//
+		Thread.sleep(1000)
+		
 		WebUI.sendKeys(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_inputcode'), Keys.chord(
 				Keys.TAB))
 	}

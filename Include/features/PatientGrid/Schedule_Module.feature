@@ -31,7 +31,7 @@ Feature: Scheduled Left Filters flow
 
 		Examples: 
 			| VisitType  |
-			| Telehealth |
+			| Office Visit |
 
 	@SmokeUSMM_VerifyProviderFilter
 	Scenario Outline: Verify Appoitnment Provider Filters

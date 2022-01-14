@@ -21,6 +21,6 @@
       <guid>0be1854c-9483-4779-b4a4-6ce31f93465c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_DeleteScheduleAppointment</testCaseId>
+      <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_DelateScheduleAppointment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

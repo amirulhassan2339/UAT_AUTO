@@ -31,9 +31,6 @@ Feature: Patient Timer
 		   * I click on minimize button
 		   * I click on WFB cross button from schedule
 		When I click on supberbill tab
-		   * I click on Reset button to reset supper bill filters
-		   * I enter <DateOfService_FromDate> as date of service from date
-		   * I click on Apply button to apply supper bill filters
 		   * I select patient from super bill grid
 		Then I should see patient <Patient> as patient_name in timer popup
 		   * I click on minimize button

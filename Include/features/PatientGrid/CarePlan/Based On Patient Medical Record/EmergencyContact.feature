@@ -21,7 +21,7 @@ Feature: Care Plan - Add Emergency Contact
     And I click on save and close button
     Then I should see success message <SucessMessage> of CP
     When I click on title from care plan grid
-    #Then I should see emergency contact data LastName as <LastName> and FirstName as <FirstName> and HomePhone as <HomePhone> and MobilePhone as <MobilePhone> number
+    Then I should see emergency contact data LastName as <LastName> and FirstName as <FirstName> and HomePhone as <HomePhone> and MobilePhone as <MobilePhone> number
 
     Examples: 
       | Patient          | Title                 | LastName   | FirstName | HomePhone    | MobilePhone | SucessMessage                           |

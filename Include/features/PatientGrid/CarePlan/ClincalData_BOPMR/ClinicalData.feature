@@ -20,7 +20,6 @@ Feature: Care Plan - Clinical Data - Based On Patient Medical Record
 		When I click on Allergies tab
 		   * I click on allergies Add button
 		   * I enter <Type> in allergies type field
-		   * I enter <Source> in allergies source field
 		   * I enter <Allergy> in allergies allergy field
 		   * I enter <Start_Date> in allergies start date field
 		   * I click on allergies Update button

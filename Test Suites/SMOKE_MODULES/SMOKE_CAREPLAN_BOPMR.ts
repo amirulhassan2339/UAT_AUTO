@@ -164,7 +164,7 @@
    <testCaseLink>
       <guid>1efa7a1c-9623-4daa-a1f8-e2b4eed798cd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Based On Patient Medical Record/TC_LOBandLOBType</testCaseId>
    </testCaseLink>
    <testCaseLink>

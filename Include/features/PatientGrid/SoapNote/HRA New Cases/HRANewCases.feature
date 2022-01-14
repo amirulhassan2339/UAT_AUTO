@@ -10,13 +10,13 @@ Feature: Soap Note Creation from Schedule flow
 		When I enter <Patient> as appointment patient
 		   * I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-#		   * I drag chat list
+		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-#		   * I click on proceed button to appointment
+		#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		   * I click on three dots
-		#		   * I click on edit soapnotes
+		#				   * I click on edit soapnotes
 		   * I hover over on create soapnotes
 		   * I click on based on patient medical record
 		   * I click on add HRA plus button
@@ -37,7 +37,7 @@ Feature: Soap Note Creation from Schedule flow
 		   * I enter <RightResults> as right result
 		   * I click on save button to save assessment
 		   * I click on cross icon to close the popup
-		   * I should see <ReasonTest> in Recommended Lab section
+		#		   * I should see <ReasonTest> in Recommended Lab section
 		When I click on add HRA plus button
 		   * I click on Exam and Recomendation Tab
 		   * I select on Referral required
@@ -77,10 +77,9 @@ Feature: Soap Note Creation from Schedule flow
 		   * I click on print soap note button
 
 		Examples: 
-			| Patient          | Reason    | LocationOfVisit1              | Code1 | LocationOfVisit2                 | Code2 | PADTestToday | ReasonTest | LeftResults | RightResults | DiagnosisCode | Facility | Constitutional       | MRN           | Soap_Status | AddendumNotes |
-			| Dermo505, Mac505 | Back pain | Audio only over the telephone | 99443 | Telehealth utilizing audio/video | 99203 | Yes          | Diabetes   | 0.99-0.90   | 0.89-0.60    | Z13.6         | MHPN3    | In no acute distress | EntMerging505 | Signed      | Addendum Test |
+			| Patient          | Reason    | LocationOfVisit1              | Code1 | LocationOfVisit2                 | Code2 | PADTestToday | ReasonTest | LeftResults | RightResults | DiagnosisCode | Facility          | Constitutional       | MRN           | Soap_Status | AddendumNotes |
+			| Dermo505, Mac505 | Back pain | Audio only over the telephone | 99443 | Telehealth utilizing audio/video | 99203 | Yes          | Diabetes   | 0.99-0.90   | 0.89-0.60    | Z13.6         | VPA PC WEST ALLIS | In no acute distress | MRN0000014455 | Signed      | Addendum Test |
 
-	@Smoke_USMM_DelateScheduleAppointment
 	Scenario: Verify deleting Scheduled Appointment
 		Then I should see already scheduled appointment
 		When I click on three dots

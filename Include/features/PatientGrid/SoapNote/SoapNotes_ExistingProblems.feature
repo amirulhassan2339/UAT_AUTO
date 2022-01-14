@@ -17,10 +17,10 @@ Feature: Soap Note - Existing Problems
 		When I enter <Patient> as appointment patient
 		 And I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-#		   * I drag chat list
+		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		   * I should see already scheduled appointment
 		When I click on three dots

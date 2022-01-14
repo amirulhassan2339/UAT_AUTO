@@ -11,7 +11,7 @@ Feature: Supper Bill flows
 		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		   * I click on three dots
 		   * I hover over on create soapnotes
 		   * I click on based on patient medical record
@@ -52,8 +52,8 @@ Feature: Supper Bill flows
 		   * I click on yes non billable button
 		Then I should see success message <RevertedSucessMessage> of reverted
 		   * I click on Reset button to reset supper bill filters
-		 And I enter <DateOfService_FromDate> as date of service from date
-		   * I enter <Practice> as practice
+#		 And I enter <DateOfService_FromDate> as date of service from date
+#		   * I enter <Practice> as practice
 		   * I select <Soap_Status> as Signed status from soap status
 		#		When I select <Billing_Status2> as Billing status from leftFilterss
 		   * I click on Apply button to apply supper bill filters
@@ -71,7 +71,7 @@ Feature: Supper Bill flows
 
 		Examples: 
 			| Patient          | Reason    | Soap_Status | Facility | Diagnosis                                                 | MRN           | SucessMessage                                   | Billing_Status | Billing_Status2 | RevertedSucessMessage                            | Soap_Status | DateOfService_FromDate | Practice |
-			| Dermo505, Mac505 | Back pain | Signed      | MHPN3    | Cholera due to Vibrio cholerae 01, biovar cholerae::A00.0 | EntMerging505 | successBilling Status updated successfully!Hide | Non-Billable   | incomplete      | successBilling status reverted successfully!Hide | Signed      |               12012020 | MHPN3    |
+			| Dermo505, Mac505 | Back pain | Signed      | VPA PC WEST ALLIS    | Cholera due to Vibrio cholerae 01, biovar cholerae::A00.0 | MRN0000014455 | successBilling Status updated successfully!Hide | Non-Billable   | incomplete      | successBilling status reverted successfully!Hide | Signed      |               12012022 | VPA PC WEST ALLIS    |
 
 	@SmokeUSMM_SupperBill_ScheduleAppointmentDelete
 	Scenario: Verify deleting Scheduled Appointment

@@ -6,11 +6,11 @@
    <elementGuidId>22453229-cffd-4728-b9aa-f167d55cfe69</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[@id='toc_filter_lob_listbox']/li[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//ul[@id='toc_filter_lob_listbox']/li[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

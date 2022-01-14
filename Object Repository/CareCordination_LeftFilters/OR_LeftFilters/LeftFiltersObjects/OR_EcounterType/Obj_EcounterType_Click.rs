@@ -6,12 +6,12 @@
    <elementGuidId>f471522a-07a5-4afe-8bbd-597841808a3b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//ul[@id='toc_filter_encounter_taglist'])//parent::div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.k-dropdown-wrap.k-state-default.k-state-hover.k-state-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>((//ul[@id='toc_filter_encounter_taglist'])//parent::div)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

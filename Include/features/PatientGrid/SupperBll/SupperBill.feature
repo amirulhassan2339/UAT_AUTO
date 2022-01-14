@@ -26,7 +26,7 @@ Feature: Supper Bill flows
   
   Examples:
   | DateOfService_FromDate | Practice |
-  |               12012020 | MHPN3    |
+  |               12012020 | VPA PC WEST ALLIS    |
   
   @SmokeUSMM_SupperBill_Status_Signed
   Scenario Outline: Verify that patients are filtered against the selected soap status signed
@@ -38,7 +38,7 @@ Feature: Supper Bill flows
   * I drag chat list
   * I click create button to save appointment
   * I click on yes button
-  * I click on proceed button to appointment
+  #* I click on proceed button to appointment
   Then I should see appointment success message
   When I click on three dots
   * I hover over on create soapnotes
@@ -64,7 +64,7 @@ Feature: Supper Bill flows
   
   Examples:
   | Patient          | Reason    | ThePatientUnderstands                                                             | LocationOfVisit | PCName | PC_PhoneNumber | PatientCareTeam_Notes                                                             | Temp | Pulse | Repeat_Pulse | Resp_Rate | Pulse_Ox | Repeat_Pulse_Ox | Constitutional       |Soap_Status|Facility|
-  | Dermo505, Mac505 | Back pain | I am not assuming any responsibility for their care of providing direct treatment | Office          | Amir   |   032545235210 | I am not assuming any responsibility for their care of providing direct treatment |  102 |    50 |           60 |        20 |      100 |              85 | In no acute distress |Signed|MHPN3|
+  | Dermo505, Mac505 | Back pain | I am not assuming any responsibility for their care of providing direct treatment | Office          | Amir   |   032545235210 | I am not assuming any responsibility for their care of providing direct treatment |  102 |    50 |           60 |        20 |      100 |              85 | In no acute distress |Signed|VPA PC WEST ALLIS|
   
   @SmokeUSMM_SupperBill_Status_Incomplete
   Scenario Outline: Verify that patients are filtered against Billing status Incomplete

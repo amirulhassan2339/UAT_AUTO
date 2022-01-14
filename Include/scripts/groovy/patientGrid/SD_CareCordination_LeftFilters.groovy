@@ -32,7 +32,8 @@ class SD_CareCordination_LeftFilters {
 	@And("I click on care cordination reset button")
 	public void click_On_Reset_Button() {
 
-		WebUI.waitForElementClickable(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonReset'),20)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonReset'), 5)
+//		WebUI.waitForElementClickable(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonReset'),20)
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonReset'))
 		Thread.sleep(2000)
@@ -43,12 +44,13 @@ class SD_CareCordination_LeftFilters {
 
 		WebUI.clearText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_ClearDates/Obj_ClearBeforeDate'))
 		WebUI.clearText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_ClearDates/Obj_ClearAfterDate'))
-	}
+	
+		
+		}
 
 	@When("I enter (.*) as serving facility")
 	public void user_Enter_ServingFacility(String ServingFacility) {
-
-
+		
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_Facility/Obj_ServingFacility_Click'))
 		Thread.sleep(1000)
 
@@ -99,7 +101,8 @@ class SD_CareCordination_LeftFilters {
 	@Then("I should see care cordination serving facility (.*)")
 	public void I_should_see_care_cordination_ServingFacility_filters(String ServingFacility) {
 
-
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/GridObjects/Obj_ServingFacility_MHPN3'), 5)
+		
 		String Actual_ServingFacility = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/GridObjects/Obj_ServingFacility_MHPN3'))
 		WebUI.verifyEqual(ServingFacility, Actual_ServingFacility)
 	}
@@ -155,7 +158,8 @@ class SD_CareCordination_LeftFilters {
 	@Then("I should see care cordination Encounter (.*) filters")
 	public void I_should_see_care_cordination_Encounter_filters(String EncounterType) {
 
-
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/GridObjects/Obj_EncounterType'), 5)
+		
 		String Actual_EncounterType = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/GridObjects/Obj_EncounterType'))
 
 		//WebUI.verifyElementText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/GridObjects/Obj_EncounterType'), Actual_EncounterType)
@@ -176,7 +180,6 @@ class SD_CareCordination_LeftFilters {
 		//		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_Programe/Obj_PatientProgram_Click'), EncProgram)
 		//
 		//		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_Programe/Obj_PatientProgram_Click'), Keys.chord(Keys.ENTER))
-
 
 		Thread.sleep(2000)
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_Programe/Obj_PatientProgram_select'))
@@ -230,8 +233,6 @@ class SD_CareCordination_LeftFilters {
 
 		if(LOB== LOB) {
 
-
-
 			WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_LOB/Obj_LOBFilterSelect'))
 		}
 
@@ -265,6 +266,7 @@ class SD_CareCordination_LeftFilters {
 	@And("I enter (.*) as encounter type")
 	public void Select_Encounter(String EncounterType) {
 
+		Thread.sleep(8000)
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_EcounterType/Obj_EcounterType_Click'))
 		Thread.sleep(1000)
 

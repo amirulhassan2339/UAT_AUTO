@@ -6,12 +6,12 @@
    <elementGuidId>2d7227ce-f387-46ef-a0f9-1d1ceb3c1cb4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;k-multiselect-wrap k-floatwrap&quot;])[36]/input</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;k-multiselect-wrap k-floatwrap&quot;])[33]/input</value>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

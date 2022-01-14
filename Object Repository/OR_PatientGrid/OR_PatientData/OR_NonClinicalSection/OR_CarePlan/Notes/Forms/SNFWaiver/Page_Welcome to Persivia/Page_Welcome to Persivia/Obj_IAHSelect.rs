@@ -6,12 +6,12 @@
    <elementGuidId>674933ae-dcf2-4063-9c6f-4e6c8feb824e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li.k-item.k-state-hover</value>
+         <key>XPATH</key>
+         <value>//ul[@id='patientAttributedToIAH_listbox']//li[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='k-list-scroller']//ul)[79]//li[1]</value>
+         <key>CSS</key>
+         <value>li.k-item.k-state-hover</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -18,8 +18,10 @@ Feature: CM Status - Care Coordination
 		   * I should see patient details including <CareCoordination> AND <CareProvider> AND <Due_Date> AND CM_Status after updating data from popup
 		   * I click on CM link again
 		   * I select CM Status again
+		   * I enter care provider <CareProvider> as CP
+		   * I enter care coordination <CareCoordination> as CC
 		   * I click on save button to save notification details
 
 		Examples: 
 			| Due_Date          | CareProvider     | CareCoordination | SuccessMessage                               |
-			| 09162021 12:00 AM | mehmood, mehmood | Member, Mohsin   | successNotification updated successfullyHide |
+			| 09162021 12:00 AM | Physician, Test | Care Manager, Test   | successNotification updated successfullyHide |

@@ -288,8 +288,8 @@ class SD_Schedule {
 	@When("I enter login credentials")
 	public void Login() {
 
-		String Email = "amir@slt.com"
-		String Password = "Amir12345"
+		String Email = "ha@slt.com"
+		String Password = "Hafiz12"
 
 		WebUI.setText(findTestObject('Object Repository/OR_LoginPage/Obj_Username'), Email)
 
@@ -357,6 +357,14 @@ class SD_Schedule {
 
 		String actuaSchedulelStatus = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_ScheduleStatusValidation'))
 		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_ScheduleStatusValidation'), actuaSchedulelStatus)
+	}
+
+	@When("I select BlockName")
+	public void SelectBlockName() {
+
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Block_NameClick'))
+		Thread.sleep(1000)
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Block_NameSelect'))
 	}
 
 	@When("I click on Add Block button")

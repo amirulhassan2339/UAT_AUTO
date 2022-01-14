@@ -6,12 +6,12 @@
    <elementGuidId>3c4286a7-3d2d-4a65-ba91-888c96e8561c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
+         <key>XPATH</key>
+         <value>(//div[@id='tocGrid']//div)[8]//table//tr[1]//td[53]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='tocGrid']//table)[2]//tr[1]//td[54]/div</value>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -24,4 +24,4 @@ Feature: Patient Timer
 
 		Examples: 
 			| Patient          | SecondPatient      |
-			| Dermo505, Mac505 | Cameroon, Cameroon |
+			| Dermo505, Mac505 | MEH, BU |

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//td[contains(text(), &quot;EntMerging505&quot;)])</value>
+         <value>(//td[contains(text(), &quot;MRN0000014455&quot;)])</value>
       </entry>
       <entry>
          <key>CSS</key>

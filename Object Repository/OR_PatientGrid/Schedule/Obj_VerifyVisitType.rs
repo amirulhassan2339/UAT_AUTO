@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Telehealth')]</value>
+         <value>//span[contains(text(),'Office Visit')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

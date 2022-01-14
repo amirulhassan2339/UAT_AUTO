@@ -26,21 +26,15 @@ public class SD_PatientGrid_SupperBillTab {
 		}
 
 		if(GlobalVariable.Enterprise=='MHPN') {
-			
-						WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectMHPN'))
-					}
-					
-			if(GlobalVariable.Enterprise=='Support Test Ent') {
-			
-						WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
-					}
 
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectMHPN'))
+		}
 
-					
+		if(GlobalVariable.Enterprise=='Support Test Ent') {
 
-		Thread.sleep(3000)
-		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
-		WebUI.getUrl()
+			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
+		}
+
 
 		String ActualText = WebUI.getText(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
 		WebUI.verifyEqual(ActualText, 'CMR')
@@ -48,19 +42,18 @@ public class SD_PatientGrid_SupperBillTab {
 
 		WebUI.mouseOver(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
 
-		WebUI.enableSmartWait()
-		
-		// UAT 
-		
-		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/SupperBill/Obj_SupperBillMenuUAT'))
-		
-		// SLT
-		
-		//WebUI.click(findTestObject('Object Repository/OR_PatientGrid/SupperBill/Obj_SupperBillMenuSLT'))
-		
-		
+		// UAT
 
-		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/SupperBill/Obj_SupperBillMenuUAT'))
+
+		// SLT
+
+		//WebUI.click(findTestObject('Object Repository/OR_PatientGrid/SupperBill/Obj_SupperBillMenuSLT'))
+
+
+		Thread.sleep(3000)
+		
+		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 
 		WebUI.enableSmartWait()
 

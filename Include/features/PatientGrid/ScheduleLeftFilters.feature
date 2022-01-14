@@ -31,11 +31,11 @@ Feature: Scheduled Left Filters flow
 		When I enter <Patient> as appointment patient
 		 And I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-		   * I select Visit Type:<VisitType>
-#		   * I drag chat list
+#		   * I select Visit Type:<VisitType>
+		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		When I click on three dots
 		   * I click on edit appointment button
@@ -54,7 +54,7 @@ Feature: Scheduled Left Filters flow
 
 		Examples: 
 			| Patient          | Reason    | VisitType  |
-			| Dermo505, Mac505 | Back pain | Telehealth |
+			| Dermo505, Mac505 | Back pain | Office Visit |
 
 @Schedule_AppointmentFiltersRetains
 	Scenario Outline: Verify Appoitnment Filters retains
@@ -71,7 +71,7 @@ Feature: Scheduled Left Filters flow
 
 		Examples: 
 			| ApptProvider | Patient          | VisitType  |
-			| Amir, Hafiz  | Dermo505, Mac505 | Telehealth |
+			| Amir, Hafiz  | Dermo505, Mac505 | Office Visit |
 
 @Schedule_Status_Filters_CheckinOut
 	Scenario Outline: Verify Appoitnment Status Filters
@@ -80,10 +80,10 @@ Feature: Scheduled Left Filters flow
 		When I enter <Patient> as appointment patient
 		 And I enter <Reason> as appointment reason
 		   * I should see <Patient> as actual patient name
-#		   * I drag chat list
+		   * I drag chat list
 		   * I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		When I click on three dots
 		   * I click on checkIn button
@@ -91,7 +91,7 @@ Feature: Scheduled Left Filters flow
 		When I enter <CheckIn_Comment> as CheckInComment
 		 And I click on appointment update button
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		   * I click on schedule left filters reset button
 		   * I select Appt Status as:<ApptStatus>
@@ -101,7 +101,7 @@ Feature: Scheduled Left Filters flow
 		When I enter <CheckEdit_Comment> as CheckEditComment
 		 And I click on appointment update button
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		   * I click on three dots
 		When I click on check out button
@@ -109,7 +109,7 @@ Feature: Scheduled Left Filters flow
 		When I enter <CheckOut_Comment> as CheckOutComment
 		 And I click create button to save appointment
 		   * I click on yes button
-		   * I click on proceed button to appointment
+#		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		When I click on three dots
 		 And I click on View Patient Record button
@@ -124,7 +124,8 @@ Feature: Scheduled Left Filters flow
 	Scenario Outline: Verify Add Block By Adding
 		When I click on Add Block button
 		Then I should see add block title
-		When I enter <BlockName> as blockname
+		When I select BlockName
+#		When I enter <BlockName> as blockname
 		 And I enter <StartDate> as block_StartDate
 		   * I enter <Time> as block_Time
 		   * I enter <Comment> as block_comment

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@aria-owns='toc_filter_serving_practice_taglist toc_filter_serving_practice_listbox'])</value>
+         <value>(//input[@aria-owns='toc_filter_serving_practice_type_taglist toc_filter_serving_practice_type_listbox'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

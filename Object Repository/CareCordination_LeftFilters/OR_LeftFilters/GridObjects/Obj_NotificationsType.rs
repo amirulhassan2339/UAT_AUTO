@@ -6,16 +6,15 @@
    <elementGuidId>9a019555-b923-4da4-9e7c-f843189651e9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='tocGrid']//div[@class='k-grid-content k-auto-scrollable']//tr[1]//td[41]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>td.program.k-state-border-down</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='tocGrid']//div[@class='k-grid-content k-auto-scrollable']//tr[1]//td[39]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

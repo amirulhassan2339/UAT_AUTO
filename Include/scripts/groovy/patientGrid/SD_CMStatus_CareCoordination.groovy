@@ -75,7 +75,7 @@ public class SD_CMStatus_CareCoordination {
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Left Filters/Obj_inputSearchCareCooridnation'))
 
-		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Left Filters/Obj_inputSearchCareCooridnation'), "Xsah829, Axir829")
+		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Left Filters/Obj_inputSearchCareCooridnation'), "JOHNSON,TROY V")
 
 		Thread.sleep(4000)
 
@@ -129,7 +129,13 @@ public class SD_CMStatus_CareCoordination {
 		WebUI.verifyEqual(Actual_MRN, Expected_MRN)
 
 
+		Thread.sleep(1000)
+		
 		'Verify Admitted Date'
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_AdmittedDate'),5)
+		
+		
 		String Actual_AdmitDate = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_AdmittedDate'))
 
 		String Expected_AdmitDate = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_AdmittedDate'))
@@ -141,8 +147,13 @@ public class SD_CMStatus_CareCoordination {
 		}
 
 
-
+		Thread.sleep(1000)
+		
 		'Verify Dischare Date'
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_DischargeDate'),5)
+		
+		
 		String Actual_DischargeDate = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_DischargeDate'))
 
 		String Expected_DischargeDate = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_DischargeDate'))
@@ -154,15 +165,18 @@ public class SD_CMStatus_CareCoordination {
 		}
 
 
-		'Verify Serving Facility'
-		String Actual_Facility = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_ServingFacility'))
-
-		String Expected_Facility = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_ServingFacility'))
-
-		WebUI.verifyEqual(Actual_Facility, Expected_Facility)
+//		'Verify Serving Facility'
+//		String Actual_Facility = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_ServingFacility'))
+//
+//		String Expected_Facility = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_ServingFacility'))
+//
+//		WebUI.verifyEqual(Actual_Facility, Expected_Facility)
 
 
 		'Verify Lace'
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_Lace'),5)
+		
 		String Actual_Lace = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_Lace'))
 
 		String Expected_Lace = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_Lace'))
@@ -186,6 +200,7 @@ public class SD_CMStatus_CareCoordination {
 
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CMStatus_Updated_Click'))
+		Thread.sleep(1000)
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CMStatus_Updated_SelectActive'))
 	}
 
@@ -194,6 +209,7 @@ public class SD_CMStatus_CareCoordination {
 
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CMStatus_Updated_Click'))
+		Thread.sleep(1000)
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CMStatus_Updated_SelectEligible'))
 	}
 
@@ -204,11 +220,13 @@ public class SD_CMStatus_CareCoordination {
 
 		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareProvider'), CareProvider)
 
+		Thread.sleep(1000)
+		
 		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareProvider'), Keys.chord(Keys.ENTER))
 
-		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareProvider'), CareProvider)
-
-		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareProvider'), Keys.chord(Keys.ENTER))
+//		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareProvider'), CareProvider)
+//
+//		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareProvider'), Keys.chord(Keys.ENTER))
 	}
 
 	@When("I enter care coordination (.*) as CC")
@@ -217,11 +235,13 @@ public class SD_CMStatus_CareCoordination {
 
 		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareCoordination'), CareCoordination)
 
+		Thread.sleep(1000)
+		
 		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareCoordination'), Keys.chord(Keys.ENTER))
 
-		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareCoordination'), CareCoordination)
-
-		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareCoordination'), Keys.chord(Keys.ENTER))
+//		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareCoordination'), CareCoordination)
+//
+//		WebUI.sendKeys(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Popup_Verification/Obj_CareCoordination'), Keys.chord(Keys.ENTER))
 	}
 
 	@When("I click on save button to save notification details")
@@ -242,7 +262,7 @@ public class SD_CMStatus_CareCoordination {
 
 		WebUI.verifyEqual(Actual_Message, SuccessMessage)
 
-		Thread.sleep(5000)
+		Thread.sleep(20000)
 	}
 
 	@Then("I should see patient details including (.*) AND (.*) AND (.*) AND CM_Status after updating data from popup")
@@ -251,7 +271,8 @@ public class SD_CMStatus_CareCoordination {
 
 		'Verify Care Coordination'
 
-
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_CareCoordination'),5)
+		
 		String Expected_CareCoordination = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_CareCoordination'))
 
 
@@ -262,6 +283,10 @@ public class SD_CMStatus_CareCoordination {
 
 
 		'Verify Care Provider'
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_CareProvider'),5)
+		
+		
 		String Actual_CareProvider = CareProvider
 
 		String Expected_CareProvider = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_CareProvider'))
@@ -272,6 +297,10 @@ public class SD_CMStatus_CareCoordination {
 
 
 		'Verify Due Date'
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_DueDate'),5)
+		
+		
 		String date = Due_Date.substring(0, 8)
 
 		String actual_DueDate = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/Grid_Verification/Obj_DueDate'))
@@ -285,6 +314,10 @@ public class SD_CMStatus_CareCoordination {
 
 
 		'Verify Status'
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_VerifyCMStatus'),5)
+		
+		
 		String Actual_CM_Status = WebUI.getText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_VerifyCMStatus'))
 
 		String Expected_CM_Status = "Active"
@@ -401,7 +434,7 @@ public class SD_CMStatus_CareCoordination {
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Left Filters/Obj_inputSearchCareCooridnation'))
 
-		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Left Filters/Obj_inputSearchCareCooridnation'), "Xsah829, Axir829")
+		WebUI.setText(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Left Filters/Obj_inputSearchCareCooridnation'), "JOHNSON,TROY V")
 
 		Thread.sleep(4000)
 
@@ -422,8 +455,9 @@ public class SD_CMStatus_CareCoordination {
 	@Then("I select (.*) as export")
 	public void ClickExportOptions(String Export) {
 
-		Thread.sleep(5000)
+		//Thread.sleep(5000)
 
+		WebUI.waitForElementVisible(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_Export_BTNCLick'), 5)
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/CM Status/CM Grid/Obj_Export_BTNCLick'))
 
 		if(Export== "Export (All Columns)") {

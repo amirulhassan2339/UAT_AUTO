@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='k-header k-grid-toolbar'])[4]/div//li[1]</value>
+         <value>(//div[@class='k-header k-grid-toolbar'])[2]/div//li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

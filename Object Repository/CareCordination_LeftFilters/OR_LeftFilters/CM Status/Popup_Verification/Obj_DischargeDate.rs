@@ -6,12 +6,12 @@
    <elementGuidId>0da1689d-e685-4c8d-885f-cefc36cadf4b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
+         <key>XPATH</key>
+         <value>(//span[text()= '07/29/2021'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[text()= '07/02/2021'])[1]</value>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

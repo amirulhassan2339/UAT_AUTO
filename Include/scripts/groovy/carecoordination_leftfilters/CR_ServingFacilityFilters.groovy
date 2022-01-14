@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions
 import cucumber.api.junit.Cucumber
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="Include/features/PatientGrid/CarePlan/Care Coordination Left Filters/ServingFacilityFilters.feature",
+@CucumberOptions(features="Include/features/PatientGrid/CarePlan/Care Coordination Left Filters/ServingFacility.feature",
 glue="",
 //tags = "@Smoke_USMM",
 plugin=["pretty", "html:ReportsFolder", "json:ReportsFolder/cucumber.json"])

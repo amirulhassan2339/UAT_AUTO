@@ -1001,6 +1001,7 @@ class SD_BOPMR {
 	public void EnterProblemCode(String ProblemCode) {
 
 		WebUI.setText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/CP_ADDProblem/Obj_Problem_Code'), ProblemCode)
+		Thread.sleep(1000)
 		WebUI.sendKeys(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/CP_ADDProblem/Obj_Problem_Code'), Keys.chord(Keys.ENTER))
 
 	}

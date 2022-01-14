@@ -6,12 +6,12 @@
    <elementGuidId>aec22027-cdbd-41d1-8757-a170cea2faa3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
+         <key>XPATH</key>
+         <value>(//span[@data-mrn='420620'])</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@data-mrn='EpisodeTest829'])</value>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

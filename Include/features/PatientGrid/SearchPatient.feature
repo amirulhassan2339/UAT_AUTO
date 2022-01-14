@@ -15,7 +15,7 @@ Feature: Search Patient
 			| Mac505           | Dermo505, Mac505 | PE05E6ECEF0E46443B887BA108B24D9049 | 02/02/2000 | Active         |
 			| Mac505 Dermo505  | Dermo505, Mac505 | PE05E6ECEF0E46443B887BA108B24D9049 | 02/02/2000 | Active         |
 			| Dermo505         | Dermo505, Mac505 | PE05E6ECEF0E46443B887BA108B24D9049 | 02/02/2000 | Active         |
-			| EntMerging505    | Dermo505, Mac505 | PE05E6ECEF0E46443B887BA108B24D9049 | 02/02/2000 | Active         |
+			| MRN0000014455    | Dermo505, Mac505 | PE05E6ECEF0E46443B887BA108B24D9049 | 02/02/2000 | Active         |
   #@SearchByFirstName
   #Scenario Outline: Search Patient Using First Name From Patient Grid
     #When I search <Patient> using global search

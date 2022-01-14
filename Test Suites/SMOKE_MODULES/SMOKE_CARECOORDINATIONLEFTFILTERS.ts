@@ -36,16 +36,16 @@
       <testCaseId>Test Cases/CucumberRunners/Care Coordination Left Filters/TC_LOBFilters</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>f48ec4da-538b-4aeb-812f-c36457f7a7f1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/CucumberRunners/Care Coordination Left Filters/TC_PatientProgramFilters</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>7be9442b-e391-4252-840b-b2be0d071dec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Care Coordination Left Filters/TC_NotificationTypeFilters</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f48ec4da-538b-4aeb-812f-c36457f7a7f1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Care Coordination Left Filters/TC_PatientProgramFilters</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d4ade384-b9b6-4596-a042-f7a663cb5601</guid>
@@ -56,7 +56,7 @@
    <testCaseLink>
       <guid>7f8a36e0-0978-4326-be19-02feceaf4c5f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Care Coordination Left Filters/TC_CMStatus_HyperLink</testCaseId>
    </testCaseLink>
    <testCaseLink>

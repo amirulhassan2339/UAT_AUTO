@@ -16,4 +16,4 @@ Feature: Care Cordination Left Filters
     
     Examples: 
       | Facility |
-      | Centinela Hospital Medical Center|
+      | HOS|

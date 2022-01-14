@@ -47,7 +47,7 @@ class SD_Login {
 	public void Logout() throws Throwable {
 
 
-		Thread.sleep(7000)
+		Thread.sleep(10000)
 
 
 

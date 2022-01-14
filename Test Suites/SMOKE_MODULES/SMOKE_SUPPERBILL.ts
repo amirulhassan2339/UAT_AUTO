@@ -12,18 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>2573710c-75cc-4521-92c2-3a99d2c9bc88</testSuiteGuid>
    <testCaseLink>
-      <guid>f4ad1d73-eac0-4165-ad59-2a9c0fde94ae</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_SupperBill_DateRange</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d1f606bc-9d25-4a12-8d75-a9dd30967ee1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_SupperBill_PracticeFacility</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>7a6ba10d-5482-4610-a152-6e840deef146</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -42,9 +30,15 @@
       <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_SupperBill_PDFView_ParticularPatient</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7327ad3f-594d-4d3d-a614-c41f9bc627e7</guid>
+      <guid>f4ad1d73-eac0-4165-ad59-2a9c0fde94ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_DeleteScheduleAppointment</testCaseId>
+      <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_SupperBill_DateRange</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d1f606bc-9d25-4a12-8d75-a9dd30967ee1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CucumberRunners/Supper Bill/TC_SupperBill_PracticeFacility</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

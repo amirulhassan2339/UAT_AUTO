@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//ul[@data-role=&quot;staticlist&quot;])[77]//li[2]</value>
+         <value>(//ul[@data-role=&quot;staticlist&quot;])[51]//li[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

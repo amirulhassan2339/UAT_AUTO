@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Obj_AdmittedDate</name>
+   <name>Obj_diabetesClick</name>
    <tag></tag>
-   <elementGuidId>c311d1bf-f3df-46b6-83c5-2ac9c0a27f6c</elementGuidId>
+   <elementGuidId>fcc0dde6-9151-4e6b-9bc6-b103dfecef01</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@id='tocGrid']//div)[8]//table//tr[1]//td[12]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div[id='form-group-dlib_problems_code_find_problemCodes']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/OR_Telehealth/Obj_frame']</value>
+         <value>//*[@ref_element = 'Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/HistoryTab/iframe_Assessment_hraIframe']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='tocGrid']//table)[2]//tr[1]//td[14]</value>
+      <value>//div[@class='well']/div/form/div[2]/div/div/div[4]/div/div[2]/div/div/div/input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/OR_Telehealth/Obj_frame</value>
+      <value>Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/HistoryTab/iframe_Assessment_hraIframe</value>
    </webElementProperties>
 </WebElementEntity>

@@ -60,10 +60,9 @@ class SD_SoapNotes {
 		Thread.sleep(5000)
 
 		WebUI.sendKeys(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_Appointment_PatientSearch'), Keys.chord(Keys.ENTER))
-	
+
 		Thread.sleep(2000)
-		
-		}
+	}
 
 	@When("I enter (.*) as appointment reason")
 	public void I_enter_reason_as_appointment(String Reason) {
@@ -88,7 +87,7 @@ class SD_SoapNotes {
 		Thread.sleep(2000);
 		//String xpath='(//div[@id="Appointment-type-list"])[3]//ul//li[text()="'+VisitType+'"]'
 		String xpath='(//ul[@id="Appointment-type_listbox"])[2]//li[text()="'+VisitType+'"]'
-		
+
 
 		obj.selectdropdown(frame,xpath)
 	}
@@ -169,7 +168,6 @@ class SD_SoapNotes {
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_YesBtn'))
 
 		Thread.sleep(3000)
-		
 	}
 
 	@And("I click on proceed button to appointment")
@@ -178,7 +176,7 @@ class SD_SoapNotes {
 
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_ProceedBtn'), 10)
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_ProceedBtn'))
-		
+
 		Thread.sleep(3000)
 	}
 
@@ -546,7 +544,17 @@ class SD_SoapNotes {
 		Thread.sleep(1000)
 		WebUI.sendKeys(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/ReviewOfSystemTab/Obj_Select Diagnosis_Input'), Keys.chord(Keys.ENTER))
 
-	}
+	
+//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/ReviewOfSystemTab/Obj_diabetesClick'))
+//		
+//		WebUI.setText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/ReviewOfSystemTab/Obj_diabetesSelect'),"No")
+//		Thread.sleep(1000)
+//		WebUI.sendKeys(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/ReviewOfSystemTab/Obj_diabetesSelect'), Keys.chord(Keys.ENTER))
+
+		
+		
+		}
+	
 
 	@Then("I click on Exam and Recomendation Tab")
 	public void I_click_examandrecomendation() {
@@ -705,18 +713,11 @@ class SD_SoapNotes {
 	@Then("I click on add Medication existing button")
 	public void I_click_On_Medication_existing() {
 
-		
-		Thread.sleep(12000)
-		
-		
-		WebUI.scrollToElement(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Obj_Medicatoin_Hover'), 30)
-		
-		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Obj_Medication_Existing'), 15)
-		
-				
-				
-		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Obj_Medicatoin_Hover'))
 
+		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Obj_Medicatoin_Hover'))
+		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Obj_Medication_Plus'), 20)
+		Thread.sleep(5000)
+		
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Obj_Medication_Existing'))
 
 		Thread.sleep(2000)
@@ -818,28 +819,28 @@ class SD_SoapNotes {
 
 		WebUI.scrollToElement(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_MedicationCode'), 20)
 
-//		String Actual_Medication = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_MedicationCode'))
-//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_MedicationCode'), Actual_Medication, FailureHandling.STOP_ON_FAILURE)
+		//		String Actual_Medication = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_MedicationCode'))
+		//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_MedicationCode'), Actual_Medication, FailureHandling.STOP_ON_FAILURE)
 
 
 		String Actual_Route = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_Route'))
 		WebUI.verifyEqual(Actual_Route, "buccal")
-		
+
 		//WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_Route'), Actual_Route, FailureHandling.STOP_ON_FAILURE)
 
-		
+
 		String Actual_StartDate = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_StartDate'))
 		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_StartDate'), Actual_StartDate, FailureHandling.STOP_ON_FAILURE)
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_DeleteMedication'))
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_ConfirmDeleteMedication'))
-		
-//		String Actual_Reason = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_Reason'))
-//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_Reason'), Actual_Reason, FailureHandling.STOP_ON_FAILURE)
+
+		//		String Actual_Reason = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_Reason'))
+		//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_Reason'), Actual_Reason, FailureHandling.STOP_ON_FAILURE)
 
 
-//		String Actual_DispensedQuantity = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_DispensedQuantity'))
-//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_DispensedQuantity'), Actual_DispensedQuantity, FailureHandling.STOP_ON_FAILURE)
+		//		String Actual_DispensedQuantity = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_DispensedQuantity'))
+		//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Medications/Medication_DataVerification/Obj_Entered_DispensedQuantity'), Actual_DispensedQuantity, FailureHandling.STOP_ON_FAILURE)
 
 
 	}
@@ -862,13 +863,11 @@ class SD_SoapNotes {
 	@Then("I click on add Problem existing button")
 	public void I_click_On_Problems_ExistingBTN() {
 
-		WebUI.enableSmartWait()
+		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Obj_Problems_Hover'))
+		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Obj_Problems_Plus'), 10)
 		
-		Thread.sleep(12000)
-				
-		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Obj_Problems_Hover'))		
 		Thread.sleep(5000)
-		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Obj_Problems_Plus'))
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Obj_Problem_Existing'))
 
 	}
 
@@ -907,8 +906,8 @@ class SD_SoapNotes {
 		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Problems_DataVerification/Obj_Entered_ProblemsCode'), Actual_Problems, FailureHandling.STOP_ON_FAILURE)
 
 
-//		String Actual_DispensedQuantity = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Problems_DataVerification/Obj_Entered_StartDate'))
-//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Problems_DataVerification/Obj_Entered_StartDate'), Actual_DispensedQuantity, FailureHandling.STOP_ON_FAILURE)
+		//		String Actual_DispensedQuantity = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Problems_DataVerification/Obj_Entered_StartDate'))
+		//		WebUI.verifyElementText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_Problems/Problems_DataVerification/Obj_Entered_StartDate'), Actual_DispensedQuantity, FailureHandling.STOP_ON_FAILURE)
 
 
 	}
@@ -975,7 +974,7 @@ class SD_SoapNotes {
 
 		Thread.sleep(2000)
 	}
-	
+
 	@And("I click on add Lab Results plus button")
 	public void I_click_Add_LabResults() {
 
@@ -1267,7 +1266,7 @@ class SD_SoapNotes {
 		WebUI.verifyEqual(Actual_SignMessage, "successSOAP Note SignedHide")
 
 	}
-	
+
 	@Then("I should see (.*) in Recommended Lab section")
 	public void RecommendedLabSection(String ReasonTest) {
 
@@ -1367,7 +1366,7 @@ class SD_SoapNotes {
 
 		String Actual_SignMessage = WebUI.getText(findTestObject('AllSoapNoteTest/NewHRAFlows_Objects/Obj_verifyMRN'))
 
-		WebUI.verifyEqual(Actual_SignMessage, "EntMerging505")
+		WebUI.verifyEqual(Actual_SignMessage, MRN)
 
 		Thread.sleep(6000)
 
@@ -1711,7 +1710,7 @@ class SD_SoapNotes {
 
 	}
 
-	
+
 	@Then("I click on procced button")
 	public void ClickOnAllergyProceedBTN() {
 
@@ -1733,17 +1732,17 @@ class SD_SoapNotes {
 	@And("I select Source as:(.*)")
 	public void i_select_Source(String Source) {
 
-				Thread.sleep(3000)
-		
-				'I click on Souece field'
-				WebUI.click(SourceObj)
-				Thread.sleep(2000)
-				
-				'I select value from the dropdown'
-				Thread.sleep(2000);
-				String xpath='(//ul[@id="encounterSoapCodeSystem_listbox"])//li[text()="'+Source+'"]'
-		
-				obj.selectdropdown(frame,xpath)
+		Thread.sleep(3000)
+
+		'I click on Souece field'
+		WebUI.click(SourceObj)
+		Thread.sleep(2000)
+
+		'I select value from the dropdown'
+		Thread.sleep(2000);
+		String xpath='(//ul[@id="encounterSoapCodeSystem_listbox"])//li[text()="'+Source+'"]'
+
+		obj.selectdropdown(frame,xpath)
 	}
 
 	@Then("I enter (.*) as encountercode")

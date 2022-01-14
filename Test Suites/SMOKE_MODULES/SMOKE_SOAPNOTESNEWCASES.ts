@@ -14,13 +14,13 @@
    <testCaseLink>
       <guid>40f84638-e41b-49aa-abbe-1e3f6a732cb9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_ExistingMedications</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>51cc2c9b-6036-450a-9d93-3e993e45fcf5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_DelateScheduleAppointment</testCaseId>
    </testCaseLink>
    <testCaseLink>
