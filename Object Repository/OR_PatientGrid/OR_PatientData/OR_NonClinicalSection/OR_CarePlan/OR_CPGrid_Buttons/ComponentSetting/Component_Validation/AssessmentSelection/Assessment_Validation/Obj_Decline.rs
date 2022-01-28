@@ -9,12 +9,12 @@
          <key>CSS</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(text(), 'Review concepts and goals of chronic case management program.')]//parent::td</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'Most of the time' or . = 'Most of the time') and @ref_element = 'Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_Close Popup/Obj_CCMFrame']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//textarea[contains(text(), 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -423,10 +423,10 @@ class SD_Schedule {
 	public void ValidateBlockSuccessMessage() {
 
 
-		String actual_message = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Block_SuccessMessage'))
-		WebUI.verifyEqual(actual_message, "successAppointment block saved successfully.Hide")
-		Thread.sleep(1000)
-
-		WebUI.click(findTestObject('Object Repository/OR_Alert/Obj_Hide'))
+//		String actual_message = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Block_SuccessMessage'))
+//		WebUI.verifyEqual(actual_message, "successAppointment block saved successfully.Hide")
+//		Thread.sleep(1000)
+//
+//		WebUI.click(findTestObject('Object Repository/OR_Alert/Obj_Hide'))
 	}
 }

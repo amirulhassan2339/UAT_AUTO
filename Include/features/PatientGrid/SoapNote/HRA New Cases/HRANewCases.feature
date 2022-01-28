@@ -12,7 +12,7 @@ Feature: Soap Note Creation from Schedule flow
 		   * I should see <Patient> as actual patient name
 		   * I drag chat list
 		   * I click create button to save appointment
-		   * I click on yes button
+#		   * I click on yes button
 		#		   * I click on proceed button to appointment
 		Then I should see appointment success message
 		   * I click on three dots
@@ -84,4 +84,4 @@ Feature: Soap Note Creation from Schedule flow
 		Then I should see already scheduled appointment
 		When I click on three dots
 		 And I click on delete appointment
-		 And I should see delete appointment message
+#		 And I should see delete appointment message

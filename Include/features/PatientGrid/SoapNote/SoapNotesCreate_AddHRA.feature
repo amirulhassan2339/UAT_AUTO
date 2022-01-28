@@ -12,7 +12,7 @@ Feature: Soap Note Creation from Schedule flow
 		   * I should see <Patient> as actual patient name
 		   * I drag chat list
 		   * I click create button to save appointment
-		   * I click on yes button
+#		   * I click on yes button
 		#* I click on proceed button to appointment
 		Then I should see appointment success message
 

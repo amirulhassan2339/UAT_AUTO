@@ -15,6 +15,7 @@ Feature: Patient Timer
 		When I click on cross button
 		   * I should see timer warning message
 		   * I click on timer save close button
+		   * I drag chat list
 		   * I click on history tab
 		Then I should see patient timer history data
 
@@ -33,6 +34,7 @@ Feature: Patient Timer
 		When I click on cross button
 		   * I should see timer warning message
 		   * I click on no discard button
+		   * I drag chat list
 		   * I click on history tab
 		Then I should not see patient timer history data
 

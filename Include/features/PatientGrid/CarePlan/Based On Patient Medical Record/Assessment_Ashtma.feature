@@ -27,5 +27,5 @@ Feature: Care Plan - Add Ashtma Assessment
 		Then I should see assessment data
 
 		Examples: 
-			| Patient          | Title              | Comment                                                                    |CPTCode|
-			| Dermo505, Mac505 | Assessment TestingName | Lorem Ipsum is simply dummy text of the printing and typesetting industry. |Test Code|
+			| Patient          | Title  | Comment                                                                    | CPTCode   |
+			| Dermo505, Mac505 | Initial Patient | Lorem Ipsum is simply dummy text of the printing and typesetting industry. | Test Code |

@@ -3,40 +3,40 @@ Feature: Scheduled Left Filters flow
 	Background: 
 		Given I navigate to CMR_Schedule
 
-@Schedule_LeftFilters_Status
-	Scenario Outline: Verify Appoitnment Status Filters
-		When I click on schedule left filters reset button
-		 And I select Appt Status as:<ApptStatus>
-		   * I click on schedule apply button
-		   * I click on three dots
-		   * I click on edit appointment button
-		   * I click on current appointment
-		Then I should see <ApptStatus> as apptStatus
-		   * I click on cancel appointment button
-		When I click on specific date
-		Then I should see record is showing
-		When I click on week button
-		Then I should see record as per weekView
-		When I click on month button
-		Then I should see record as per monthView
-
-		Examples: 
-			| ApptStatus |  | Patient          | Reason    | VisitType  | CheckIn_Comment | CheckOut_Comment | CheckEdit_Comment |
-			| Scheduled  |  | Dermo505, Mac505 | Back pain | Telehealth | Checking in     | Checking out     | Update            |
+#@Schedule_LeftFilters_Status
+#	Scenario Outline: Verify Appoitnment Status Filters
+#		When I click on schedule left filters reset button
+#		 And I select Appt Status as:<ApptStatus>
+#		   * I click on schedule apply button
+#		   * I click on three dots
+#		   * I click on edit appointment button
+#		   * I click on current appointment
+#		Then I should see <ApptStatus> as apptStatus
+#		   * I click on cancel appointment button
+#		When I click on specific date
+#		Then I should see record is showing
+#		When I click on week button
+#		Then I should see record as per weekView
+#		When I click on month button
+#		Then I should see record as per monthView
+#
+#		Examples: 
+#			| ApptStatus |  | Patient          | Reason    | VisitType  | CheckIn_Comment | CheckOut_Comment | CheckEdit_Comment |
+#			| Scheduled  |  | Dermo505, Mac505 | Back pain | Telehealth | Checking in     | Checking out     | Update            |
 
 @Schedule_VerifyViewAppointment
 	Scenario Outline: Verify View Appointment
-		When I double click on screen to add appointment
-		Then I should see schedule appointment popup
-		When I enter <Patient> as appointment patient
-		 And I enter <Reason> as appointment reason
-		   * I should see <Patient> as actual patient name
+#		When I double click on screen to add appointment
+#		Then I should see schedule appointment popup
+#		When I enter <Patient> as appointment patient
+#		 And I enter <Reason> as appointment reason
+#		   * I should see <Patient> as actual patient name
 #		   * I select Visit Type:<VisitType>
-		   * I drag chat list
-		   * I click create button to save appointment
-		   * I click on yes button
+#		   * I drag chat list
+#		   * I click create button to save appointment
+#		   * I click on yes button
 #		   * I click on proceed button to appointment
-		Then I should see appointment success message
+#		Then I should see appointment success message
 		When I click on three dots
 		   * I click on edit appointment button
 		Then I should see schedule UI status
@@ -45,12 +45,12 @@ Feature: Scheduled Left Filters flow
 		 And I click on View Patient Record button
 		   * I click on appointment tab
 		Then I should see created appointment data is showing
-		   * I click on logout button
-		When I enter login credentials
-		 And I navigate to CMR_Schedule
-		   * I click on three dots
-		   * I click on delete appointment
-		Then I should see delete appointment message
+#		   * I click on logout button
+#		When I enter login credentials
+#		 And I navigate to CMR_Schedule
+#		   * I click on three dots
+#		   * I click on delete appointment
+#		Then I should see delete appointment message
 
 		Examples: 
 			| Patient          | Reason    | VisitType  |
@@ -75,22 +75,22 @@ Feature: Scheduled Left Filters flow
 
 @Schedule_Status_Filters_CheckinOut
 	Scenario Outline: Verify Appoitnment Status Filters
-		When I double click on screen to add appointment
-		Then I should see schedule appointment popup
-		When I enter <Patient> as appointment patient
-		 And I enter <Reason> as appointment reason
-		   * I should see <Patient> as actual patient name
-		   * I drag chat list
-		   * I click create button to save appointment
-		   * I click on yes button
+#		When I double click on screen to add appointment
+#		Then I should see schedule appointment popup
+#		When I enter <Patient> as appointment patient
+#		 And I enter <Reason> as appointment reason
+#		   * I should see <Patient> as actual patient name
+#		   * I drag chat list
+#		   * I click create button to save appointment
+#		   * I click on yes button
 #		   * I click on proceed button to appointment
-		Then I should see appointment success message
+#		Then I should see appointment success message
 		When I click on three dots
 		   * I click on checkIn button
 		Then I should see checkIn title
 		When I enter <CheckIn_Comment> as CheckInComment
 		 And I click on appointment update button
-		   * I click on yes button
+#		   * I click on yes button
 #		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		   * I click on schedule left filters reset button
@@ -100,7 +100,7 @@ Feature: Scheduled Left Filters flow
 		Then I should see check edit title
 		When I enter <CheckEdit_Comment> as CheckEditComment
 		 And I click on appointment update button
-		   * I click on yes button
+#		   * I click on yes button
 #		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		   * I click on three dots
@@ -108,7 +108,7 @@ Feature: Scheduled Left Filters flow
 		Then I should see check out title
 		When I enter <CheckOut_Comment> as CheckOutComment
 		 And I click create button to save appointment
-		   * I click on yes button
+#		   * I click on yes button
 #		   * I click on proceed button to appointment
 		Then I should see appointment updated message
 		When I click on three dots
@@ -130,7 +130,7 @@ Feature: Scheduled Left Filters flow
 		   * I enter <Time> as block_Time
 		   * I enter <Comment> as block_comment
 		   * I click on save block button
-#		Then I should see block successful save message
+		Then I should see block successful save message
 #		When I click on three dots
 #		 And I click on delete block button
 

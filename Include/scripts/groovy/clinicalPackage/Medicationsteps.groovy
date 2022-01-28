@@ -4,6 +4,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.util.concurrent.ConcurrentHashMap.KeySetView
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -23,6 +25,7 @@ import internal.GlobalVariable
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
+import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -159,6 +162,8 @@ class Medicationsteps {
 	def I_enter_name_of_medication(String Name){
 		'enter medication name'
 		WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Medication/Obj_cmtake_code'), Name)
+		Thread.sleep(1000)
+		WebUI.sendKeys(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Medication/Obj_cmtake_code'), Keys.chord(Keys.ENTER))
 	}
 
 	@And("I enter (.*) in medication frequency field")

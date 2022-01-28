@@ -117,7 +117,7 @@ class ProblemListsteps {
 		Thread.sleep(1000)
 		
 		WebUI.sendKeys(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_inputcode'), Keys.chord(
-				Keys.TAB))
+				Keys.ENTER))
 	}
 
 

@@ -278,11 +278,11 @@ class SD_BOPMR {
 		Thread.sleep(1000)
 
 
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
-//
-//		Thread.sleep(1000)
-//
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_SaveApprove'))
+		//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
+		//
+		//		Thread.sleep(1000)
+		//
+		//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_SaveApprove'))
 
 
 	}
@@ -435,11 +435,11 @@ class SD_BOPMR {
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonReject'))
 
 		Thread.sleep(1000)
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
-//
-//		Thread.sleep(1000)
-//
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonReject'))
+		//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
+		//
+		//		Thread.sleep(1000)
+		//
+		//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonReject'))
 
 	}
 
@@ -809,7 +809,10 @@ class SD_BOPMR {
 
 		WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_input_title'),
 				Title)
-		Thread.sleep(2000)
+		Thread.sleep(1000)
+		
+		WebUI.sendKeys(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_input_title'), Keys.chord(Keys.ENTER))
+		
 	}
 
 	@And("I enter (.*) as cpt code")
@@ -936,38 +939,11 @@ class SD_BOPMR {
 		WebUI.scrollToElement(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_Decline'), 1)
 
 		String Actual_Question = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_Decline'))
-		WebUI.verifyEqual(Actual_Question, 'Review concepts and goals of chronic case management program.')
+		WebUI.verifyEqual(Actual_Question, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.')
 
-		String Actual_Title = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Clinical_Data/AllAssessment_Cases/UnCheck_Assessments/Obj_AssessmentName_AssessmentSection_CP'))
-		WebUI.verifyEqual(Actual_Title, 'Assessment TestingName')
-
-
-		Thread.sleep(4000)
-
-		//		String PublicTransport = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_PublicTransport'))
-		//		WebUI.verifyEqual(PublicTransport, 'Public transport')
-		//
-		//
-		//		String OwnHouse = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_OwnHouse'))
-		//		WebUI.verifyEqual(OwnHouse, 'Own house')
-		//
-		//
-		//		String BedBugs = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_BedBugs'))
-		//		WebUI.verifyEqual(BedBugs, 'Bed bugs')
-		//
-		//		String ActualComment = WebUI.getAttribute(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_textarea_select_notes'), 'value')
-		//
-		//		WebUI.verifyEqual(ActualComment, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
-		//
-		//		//WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_MostOfTheTime'), 3)
-		//		//
-		//		//WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_PublicTransport'), 3)
-		//		//
-		//		//WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_OwnHouse'), 3)
-		//		//
-		//		//WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_BedBugs'), 3)
-		//		//
-
+//		String Actual_Title = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Clinical_Data/AllAssessment_Cases/UnCheck_Assessments/Obj_AssessmentName_AssessmentSection_CP'))
+//		WebUI.verifyEqual(Actual_Title, 'Assessment TestingName')
+		
 	}
 
 	@And("I click on problem plus button")

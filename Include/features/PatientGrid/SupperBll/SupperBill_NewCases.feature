@@ -10,7 +10,7 @@ Feature: Supper Bill flows
 		   * I enter <Reason> as appointment reason
 		   * I drag chat list
 		   * I click create button to save appointment
-		   * I click on yes button
+#		   * I click on yes button
 #		   * I click on proceed button to appointment
 		   * I click on three dots
 		   * I hover over on create soapnotes

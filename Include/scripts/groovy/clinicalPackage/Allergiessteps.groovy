@@ -184,7 +184,7 @@ class Allergiessteps {
 	@And("I enter (.*) in allergies allergy field")
 	def allery_for_allergies(String Allergy) {
 
-		if(e==0) {
+	
 			'Click on Allergy field'
 			WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_inputcode'))
 
@@ -195,21 +195,11 @@ class Allergiessteps {
 					GlobalVariable.timeout)
 
 
-			WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_li_Allergy'))
 
 			WebUI.sendKeys(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_inputcode'),
-					Keys.chord(Keys.TAB))
-		}
-		if(e==1) {
-			'Click on Allergy field'
-			WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_inputcodeEdit'))
-
-			'Select Allergy'
-			WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_inputcodeEdit'), Allergy)
-			Thread.sleep(2000)
-			//			WebUI.sendKeys(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_inputcode'),
-			//				Keys.chord(Keys.TAB))
-		}
+					Keys.chord(Keys.ENTER))
+	
+		
 	}
 
 	@And("I enter (.*) in allergies reaction field")

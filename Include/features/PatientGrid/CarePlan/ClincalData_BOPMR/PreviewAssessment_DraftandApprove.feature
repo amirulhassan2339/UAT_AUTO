@@ -26,10 +26,9 @@ Feature: Care Plan - Preview Assessment - Based On Patient Medical Record
 		   * I mouse hover on assessment
 		   * I click on assessment icon
 		   * I click on assessment name to preview assessment detail
-		Then I should see assessment data <Title> in preview window as title
-		   * I should see assessment data <Comment> in preview window as comment
-		   * I click on OK button
-		       * I click on save and close button
+		   Then I should see assessment data <Comment> in preview window as comment
+		   When I click on OK button
+		       And I click on save and close button
 		   
 		   * I click on care plan tab
 		   * I click on add new care plan button
@@ -38,9 +37,10 @@ Feature: Care Plan - Preview Assessment - Based On Patient Medical Record
 		   * I select work in progress as no
 		   * I click on save button
 		   
-		   When I click on saveapprove button
+		   * I click on saveapprove button
 		   * I click on proceed button
 		   * I click on title from care plan grid
+		   Then I should see patient <Patient> as patient_name
 		   
 
 		Examples: 

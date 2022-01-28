@@ -26,7 +26,7 @@
    <testCaseLink>
       <guid>e3a6fafe-aba3-4ab2-9cf2-5d77d863740e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunners/Soap Notes/TC_AddMedication</testCaseId>
    </testCaseLink>
    <testCaseLink>
