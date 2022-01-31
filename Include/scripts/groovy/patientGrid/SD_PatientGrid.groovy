@@ -2,20 +2,16 @@ package patientGrid
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.By
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import cucumber.api.java.en.Given
+import cucumber.api.java.en.When
 import internal.GlobalVariable
 
 
 public class SD_PatientGrid {
-
-
 
 	@Given("I navigate to patient grid")
 	public void I_navigate_to_patient_grid() {
@@ -61,10 +57,18 @@ public class SD_PatientGrid {
 
 		//WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_PatientsSLT'))
 
+		if(WebUI.verifyElementNotPresent((findTestObject('OR_Alert/Obj_Hide')), 5)) {
 
-		Thread.sleep(2000)
+			WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Logo'), 3)
 
-		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+		}else {
+			WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+
+		}
+
+		//		Thread.sleep(2000)
+		//
+		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 
 		//Thread.sleep(14000)
 
